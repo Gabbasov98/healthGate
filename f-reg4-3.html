@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная</title>
+    <link rel="stylesheet" href="css/nice-select.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header class='header'>
+        <div class='custom-container'>
+            <div class='header__inner'>
+                <div class="header__left">
+                    <a href="" class="header__logo">
+                        <img src="img/logo.png" alt="">
+                    </a>
+                    <div class="header__title">Заказ специального питания</div>
+                    <div class="header__desc">
+                        здесь вы можете заказать продукты и составить индивидуальный план питания <br> по состоянию здоровья и образу жизни
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class='reg4'>
+        <div class='custom-container'>
+            <div class="preferences">
+                <div class="preferences__top">
+                    <h2 class="preferences__title">Теперь введите свой номер телефона</h2>
+                    <div class="preferences__step">шаг 3/3</div>
+                </div>
+                <form action="" class="reg4__form">
+                    <input class="input-valid" type="tel" value="+7 (911) 255 - 99 - 77" placeholder="+7 (___) ___ - __ - __">
+                    <div class="reg4__form-phone-hint">
+                        На этот номер мы отправили СМС с четырёхзначным кодом. <br> Введите его в поле ниже
+                    </div>
+                    <div class="reg4__pincode pincode">
+                        <input type="number" class="input-invalid">
+                        <input type="number" class="input-invalid">
+                        <input type="number" class="input-invalid">
+                        <input type="number" class="input-invalid">
+                        <input type="hidden" name="pincode">
+                        <button class="reg4__pincode-remove" type="button">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="#FA3C6A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M15 9L9 15" stroke="#FA3C6A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M9 9L15 15" stroke="#FA3C6A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="preferences__bottom">
+                        <button disabled class="preferences__confirm btn btn-green btn-rounded">
+                            продолжить
+                        </button>
+                        <div class="preferences__bottom-timer">00:59</div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <script src="js/swiper.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

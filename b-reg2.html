@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная</title>
+    <link rel="stylesheet" href="css/nice-select.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header class='header'>
+        <div class='custom-container'>
+            <div class='header__inner'>
+                <div class="header__left">
+                    <a href="" class="header__logo">
+                        <img src="img/logo.png" alt="">
+                    </a>
+                    <div class="header__title">Заказ специального питания</div>
+                    <div class="header__desc">
+                        здесь вы можете заказать продукты и составить индивидуальный план питания <br> по состоянию здоровья и образу жизни
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class='reg2'>
+        <div class='custom-container'>
+            <div class="preferences">
+                <div class="preferences__top">
+                    <h2 class="preferences__title">Отметьте свои предпочтения по состоянию здоровья</h2>
+                    <div class="preferences__step">шаг 1/3</div>
+                </div>
+                <div class="preferences__wrapper">
+                    <div class="preference">
+                        <div class="preference-show">
+                            <div class="preference-show__left">
+                                <span>Короновирус</span>
+                                <i>
+                                    <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 1L7 7L13 1" stroke="#5A5A75" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </i>
+                            </div>
+                            <img src="img/koronavirus.svg" alt="">
+                        </div>
+                        <div class="preference-hidden">
+                            <div class="preference__check">
+                                <input type="checkbox" id="check1" data-check="select-all-preferences">
+                                <label for="check1">выбрать все</label>
+                            </div>
+                            <div class="preference__check">
+                                <input type="checkbox" id="check2">
+                                <label for="check2">коронавирус</label>
+                            </div>
+                            <div class="preference__check">
+                                <input type="checkbox" id="check3">
+                                <label for="check3">коронавирус Дельта</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="preference">
+                        <div class="preference-show">
+                            <div class="preference-show__left">
+                                <span>Старение</span>
+                                <i>
+                                    <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 1L7 7L13 1" stroke="#5A5A75" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </i>
+                            </div>
+                            <img src="img/old-man.svg" alt="">
+                        </div>
+                        <div class="preference-hidden">
+                            <div class="preference__check">
+                                <input type="checkbox" id="check4" data-check="select-all-preferences">
+                                <label for="check4">выбрать все</label>
+                            </div>
+                            <div class="preference__check">
+                                <input type="checkbox" id="check5">
+                                <label for="check5">здоровое старение</label>
+                            </div>
+                            <div class="preference__check">
+                                <input type="checkbox" id="check6">
+                                <label for="check6">расстройство пищеварения</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="preference">
+                        <div class="preference-show">
+                            <div class="preference-show__left">
+                                <span>Здоровье мозга</span>
+                                <i>
+                                    <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 1L7 7L13 1" stroke="#5A5A75" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </i>
+                            </div>
+                            <img src="img/brain.svg" alt="">
+                        </div>
+                        <div class="preference-hidden">
+                            <div class="preference__check">
+                                <input type="checkbox" id="check7" data-check="select-all-preferences">
+                                <label for="check7">выбрать все</label>
+                            </div>
+                            <div class="preference__check">
+                                <input type="checkbox" id="check8">
+                                <label for="check8">эпилпсия</label>
+                            </div>
+                            <div class="preference__check">
+                                <input type="checkbox" id="check9">
+                                <label for="check9">болезнь Альцгеймера</label>
+                            </div>
+                            <div class="preference__check">
+                                <input type="checkbox" id="check10">
+                                <label for="check10">легкие когнетивные нарушения мозга</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="preference">
+                        <div class="preference-show">
+                            <div class="preference-show__left">
+                                <span>Онкология</span>
+                                <i>
+                                    <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 1L7 7L13 1" stroke="#5A5A75" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </i>
+                            </div>
+                            <img src="img/cancer-cell.svg" alt="">
+                        </div>
+                        <div class="preference-hidden">
+                            <div class="preference__check">
+                                <input type="checkbox" id="check11" data-check="select-all-preferences">
+                                <label for="check11">выбрать все</label>
+                            </div>
+                            <div class="preference__check">
+                                <input type="checkbox" id="check12">
+                                <label for="check12">онкология</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="preference">
+                        <div class="preference-show">
+                            <div class="preference-show__left">
+                                <span>Хирургия</span>
+                                <i>
+                                    <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 1L7 7L13 1" stroke="#5A5A75" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </i>
+                            </div>
+                            <img src="img/scalpel.svg" alt="">
+                        </div>
+                        <div class="preference-hidden">
+                            <div class="preference__check">
+                                <input type="checkbox" id="check13" data-check="select-all-preferences">
+                                <label for="check13">выбрать все</label>
+                            </div>
+                            <div class="preference__check">
+                                <input type="checkbox" id="check14">
+                                <label for="check14">энтеральное питание</label>
+                            </div>
+                            <div class="preference__check">
+                                <input type="checkbox" id="check15">
+                                <label for="check15">серьезная хирургия</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="preference">
+                        <div class="preference-show">
+                            <div class="preference-show__left">
+                                <span>Дисфагия</span>
+                                <i>
+                                    <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 1L7 7L13 1" stroke="#5A5A75" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </i>
+                            </div>
+                            <img src="img/sore-throat.svg" alt="">
+                        </div>
+                        <div class="preference-hidden">
+                            <div class="preference__check">
+                                <input type="checkbox" id="check16" data-check="select-all-preferences">
+                                <label for="check16">выбрать все</label>
+                            </div>
+                            <div class="preference__check">
+                                <input type="checkbox" id="check17">
+                                <label for="check17">дисфагия</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="preference">
+                        <div class="preference-show">
+                            <div class="preference-show__left">
+                                <span>Пищевая аллергия</span>
+                                <i>
+                                    <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 1L7 7L13 1" stroke="#5A5A75" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </i>
+                            </div>
+                            <img src="img/gluten-free.svg" alt="">
+                        </div>
+                        <div class="preference-hidden">
+                            <div class="preference__check">
+                                <input type="checkbox" id="check18" data-check="select-all-preferences">
+                                <label for="check18">выбрать все</label>
+                            </div>
+                            <div class="preference__check">
+                                <input type="checkbox" id="check19">
+                                <label for="check19">аллергия на лактозу</label>
+                            </div>
+                            <div class="preference__check">
+                                <input type="checkbox" id="check20">
+                                <label for="check20">аллергия на глютен</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="preference">
+                        <div class="preference-show">
+                            <div class="preference-show__left">
+                                <span>Здоровье кишечника</span>
+                                <i>
+                                    <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 1L7 7L13 1" stroke="#5A5A75" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </i>
+                            </div>
+                            <img src="img/intestine.svg" alt="">
+                        </div>
+                        <div class="preference-hidden">
+                            <div class="preference__check">
+                                <input type="checkbox" id="check21" data-check="select-all-preferences">
+                                <label for="check21">выбрать все</label>
+                            </div>
+                            <div class="preference__check">
+                                <input type="checkbox" id="check22">
+                                <label for="check22">воспалительное заболевание кишечника</label>
+                            </div>
+                            <div class="preference__check">
+                                <input type="checkbox" id="check23">
+                                <label for="check23">синдром раздраженного кишечника</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="preference">
+                        <div class="preference-show">
+                            <div class="preference-show__left">
+                                <span>Врожденные нарушения  <br>
+                                    обмена веществ</span>
+                                <i>
+                                    <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 1L7 7L13 1" stroke="#5A5A75" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </i>
+                            </div>
+                            <img src="img/molecular.svg" alt="">
+                        </div>
+                        <div class="preference-hidden">
+                            <div class="preference__check">
+                                <input type="checkbox" id="check24" data-check="select-all-preferences">
+                                <label for="check24">выбрать все</label>
+                            </div>
+                            <div class="preference__check">
+                                <input type="checkbox" id="check25">
+                                <label for="check25">нарушение обмена веществ</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="preference">
+                        <div class="preference-show">
+                            <div class="preference-show__left">
+                                <span>Метаболическое здоровье</span>
+                                <i>
+                                    <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 1L7 7L13 1" stroke="#5A5A75" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </i>
+                            </div>
+                            <img src="img/molecular.svg" alt="">
+                        </div>
+                        <div class="preference-hidden">
+                            <div class="preference__check">
+                                <input type="checkbox" id="check26" data-check="select-all-preferences">
+                                <label for="check26">выбрать все</label>
+                            </div>
+                            <div class="preference__check">
+                                <input type="checkbox" id="check27">
+                                <label for="check27">диабет</label>
+                            </div>
+                            <div class="preference__check">
+                                <input type="checkbox" id="check28">
+                                <label for="check28">контроль веса</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="preference">
+                        <div class="preference-show">
+                            <div class="preference-show__left">
+                                <span>Педиатрия</span>
+                                <i>
+                                    <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 1L7 7L13 1" stroke="#5A5A75" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </i>
+                            </div>
+                            <img src="img/newborn.svg" alt="">
+                        </div>
+                        <div class="preference-hidden">
+                            <div class="preference__check">
+                                <input type="checkbox" id="check29" data-check="select-all-preferences">
+                                <label for="check29">выбрать все</label>
+                            </div>
+                            <div class="preference__check">
+                                <input type="checkbox" id="check30">
+                                <label for="check30">детская дисфагия</label>
+                            </div>
+                            <div class="preference__check">
+                                <input type="checkbox" id="check31">
+                                <label for="check31">рефлюкс</label>
+                            </div>
+                            <div class="preference__check">
+                                <input type="checkbox" id="check32">
+                                <label for="check32">невралогические расстройства</label>
+                            </div>
+                            <div class="preference__check">
+                                <input type="checkbox" id="check33">
+                                <label for="check33">церебральный паралич</label>
+                            </div>
+                            <div class="preference__check">
+                                <input type="checkbox" id="check34">
+                                <label for="check34">заболевание ЖКТ</label>
+                            </div>
+                            <div class="preference__check">
+                                <input type="checkbox" id="check35">
+                                <label for="check35">трудности с кормлением</label>
+                            </div>
+                            <div class="preference__check">
+                                <input type="checkbox" id="check36">
+                                <label for="check36">задержка роста</label>
+                            </div>
+                            <div class="preference__check">
+                                <input type="checkbox" id="check37">
+                                <label for="check37">муковисцедоз</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="preferences__bottom">
+                    <button class="preferences__confirm btn btn-green btn-rounded">
+                        продолжить
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <script src="js/swiper.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
