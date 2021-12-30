@@ -73,6 +73,13 @@
     }
 }
 
+.reg-link {
+    display: block;
+    text-align: right;
+    font-size: 16px;
+    color: $green;
+}
+
 // reg step2
 .preferences {
     width: 860px;
@@ -167,7 +174,7 @@
             &:checked {
                 &+label:before {
                     background-color: #51B1A6;
-                    background-image: url(../img/check.svg);
+                    background-image: url(../../../assets/images/markup-img/check.svg);
                     background-size: 10px auto;
                     background-position: center;
                     background-repeat: no-repeat;
@@ -255,7 +262,16 @@
     &__form {
         width: 450px;
         margin: 40px auto 0;
-        &>input {
+        &-togglepassword {
+            position: absolute;
+            top: 50%;
+            right: 30px;
+            transform: translateY(-50%);
+        }
+        &-group {
+            position: relative;
+        }
+        & input {
             background: #FFFFFF;
             border: 1px solid #C4C9D3;
             border-radius: 16px;
@@ -267,7 +283,7 @@
             height: 60px;
             width: 100%;
             &.input-valid {
-                background-image: url(../img/input-check.svg);
+                background-image: url(../../../assets/images/markup-img/input-check.svg);
                 background-repeat: no-repeat;
                 background-position: right 34px center;
                 background-size: 25px auto;
@@ -320,6 +336,81 @@
             }
             &:focus {
                 border: 1px solid #00BA88;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .preferences {
+        width: 100%;
+        padding: 35px 20px;
+        &__wrapper {
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .reg4 {
+        .preferences {
+            width: 100%;
+            padding-top: 35px;
+            &__confirm {
+                height: 45px;
+                border-radius: 16px;
+                margin-top: 20px;
+            }
+        }
+        &__form {
+            margin-top: 30px;
+            input {
+                height: 45px;
+            }
+            &-togglepassword {
+                right: 15px;
+            }
+        }
+    }
+    .reg1 {
+        padding-top: 35px;
+        &__buttons {
+            display: block;
+            a {
+                margin: 10px auto 0;
+            }
+        }
+        &__socials {
+            margin-top: 20px;
+        }
+        &__hint {
+            max-width: 320px;
+            margin: 50px auto 0;
+            &-wrapper {
+                flex-wrap: wrap;
+                margin-top: 0;
+            }
+            &-item {
+                margin-right: 0 !important;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                svg {
+                    margin-right: 20px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .reg4 {
+        &__form {
+            width: 100%;
+        }
+        .preferences {
+            &__confirm {
+                width: 100%;
             }
         }
     }

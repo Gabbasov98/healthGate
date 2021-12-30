@@ -1,0 +1,1125 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Питание пациента</title>
+    <link rel="stylesheet" href="css/nice-select.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style2.css">
+</head>
+
+<body>
+
+    <header class='header'>
+        <div class='custom-container'>
+            <div class='header__inner'>
+                <div class="header__left">
+                    <a href="" class="header__logo">
+                        <img src="img/logo.png" alt="">
+                    </a>
+                    <div class="header__title">Заказ специального питания</div>
+                    <div class="header__desc">
+                        здесь вы можете заказать продукты и составить индивидуальный план питания <br> по состоянию здоровья и образу жизни
+                    </div>
+                </div>
+                <div class="header__right">
+                    <nav class="header-nav">
+                        <a href="" class="header-nav__item header-nav__item--active">рецепты</a>
+                        <a href="" class="header-nav__item">профиль</a>
+                        <a href="" class="header-nav__item">мой план</a>
+                        <a href="" class="header-nav__item">корзина</a>
+                    </nav>
+                    <a href="" class="header__cart">
+                        <span class="header__cart-icon">
+                            <svg width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_315:3483)">
+                                <path d="M7.12492 17.9166C7.56214 17.9166 7.91658 17.5622 7.91658 17.125C7.91658 16.6878 7.56214 16.3333 7.12492 16.3333C6.68769 16.3333 6.33325 16.6878 6.33325 17.125C6.33325 17.5622 6.68769 17.9166 7.12492 17.9166Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M15.8334 17.9166C16.2706 17.9166 16.6251 17.5622 16.6251 17.125C16.6251 16.6878 16.2706 16.3333 15.8334 16.3333C15.3962 16.3333 15.0417 16.6878 15.0417 17.125C15.0417 17.5622 15.3962 17.9166 15.8334 17.9166Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M0.791748 1.29169H3.95841L6.08008 11.8921C6.15247 12.2566 6.35076 12.584 6.64022 12.817C6.92968 13.05 7.29188 13.1738 7.66341 13.1667H15.3584C15.7299 13.1738 16.0921 13.05 16.3816 12.817C16.6711 12.584 16.8694 12.2566 16.9417 11.8921L18.2084 5.25002H4.75008" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_315:3483">
+                                <rect width="19" height="19" fill="white" transform="translate(0 0.5)"/>
+                                </clipPath>
+                                </defs>
+                            </svg>
+                        </span>
+                        <span class="header__cart-num">3</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class='profile'>
+        <div class='custom-container'>
+            <div class='profile__inner'>
+                <div class="profile-sidebar">
+                    <a href="" class="profile-sidebar__link profile-sidebar__link--active">
+                        <span>
+                            Редактировать профиль
+                        </span>
+                        <img src="img/edit-green.svg" alt="">
+                    </a>
+                    <a href="" class="profile-sidebar__link">
+                        <span>Здоровое питание</span>
+                        <img src="img/add-green.svg" alt="">
+                    </a>
+                    <a href="" class="profile-sidebar__link">
+                        <span>Создать пост</span>
+                        <img src="img/post-green.svg" alt="">
+                    </a>
+                    <a href="" class="profile-sidebar__link">
+                        <span>Пациенты</span>
+                        <img src="img/pacient.svg" alt="">
+                    </a>
+                    <a href="" class="profile-sidebar__link">
+                        <span>Статистика</span>
+                        <img src="img/stat-green.svg" alt="">
+                    </a>
+                    <a href="" class="profile-sidebar__link">
+                        <span>Выйти</span>
+                        <img src="img/logout-green.svg" alt="">
+                    </a>
+                </div>
+                <div class="profile-content">
+                    <div class="patient-pitanie">
+                        <div class="patient-pitanie__top">
+                            <div class="patient-pitanie__title title2">Питание <span>Простудова О. А.</span></div>
+                        </div>
+                        <div class="patient-pitanie__tags">
+                            <a href="" class="patient-pitanie__tag">дисфагия</a>
+                            <a href="" class="patient-pitanie__tag">диабет</a>
+                        </div>
+                        <div class="patient-pitanie__subtitle">История заказов</div>
+                        <div class="patient-pitanie__group">
+                            <div class="patient-pitanie__group-show">
+                                <div class="patient-pitanie__group-date">31.12.21</div>
+                                <div class="patient-pitanie__group-title">
+                                    <span>План питания</span>
+                                    <svg width="13" height="7" viewBox="0 0 13 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12 1L6.5 6L1 1" stroke="#5A5A75" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="patient-pitanie__group-hidden">
+                                <div class="pitanie__wrap">
+                                    <div class="recipe__item">
+                                        <div class="recipe-card">
+                                            <div class="recipe-card__top">
+                                                <div class="recipe-card__logo">
+                                                    <img src="img/avatar2.jpg" alt="">
+                                                </div>
+                                                <div class="recipe-card__top-content">
+                                                    <div class="recipe-card__name">yourdoctor</div>
+                                                    <div class="recipe-card__profession">терапевт</div>
+                                                    <div class="recipe-card__tags">
+                                                        <a class="recipe-card__tag" href="">#без глютена</a>
+                                                        <a class="recipe-card__tag" href="">#диетическое</a>
+                                                        <a class="recipe-card__tag" href="">#легко готовить</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="recipe-card__img">
+                                                <img src="img/recipe2.jpg" alt="">
+                                            </div>
+                                            <div class="recipe-card__nav">
+                                                <button class="recipe-card__favourite recipe-card__nav-btn">
+                                                    <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M16.3422 2.39601C15.9344 1.97507 15.4503 1.64115 14.9175 1.41332C14.3846 1.1855 13.8135 1.06824 13.2367 1.06824C12.6599 1.06824 12.0888 1.1855 11.5559 1.41332C11.0231 1.64115 10.5389 1.97507 10.1312 2.39601L9.28495 3.26921L8.43871 2.39601C7.61508 1.54614 6.49799 1.06868 5.3332 1.06868C4.16841 1.06868 3.05132 1.54614 2.22769 2.39601C1.40406 3.24589 0.941345 4.39858 0.941345 5.60049C0.941345 6.8024 1.40406 7.95508 2.22769 8.80496L3.07392 9.67816L9.28495 16.0871L15.496 9.67816L16.3422 8.80496C16.7501 8.38421 17.0738 7.88465 17.2945 7.33482C17.5153 6.78499 17.629 6.19565 17.629 5.60049C17.629 5.00532 17.5153 4.41599 17.2945 3.86615C17.0738 3.31632 16.7501 2.81676 16.3422 2.39601V2.39601Z" stroke="#5A5A75" stroke-width="0.834381" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    </svg>
+                                                    <span>сохранить</span>
+                                                </button>
+                                                <button class="recipe-card__share recipe-card__nav-btn">
+                                                    <svg width="13" height="17" viewBox="0 0 13 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M0.551453 8.57751V14.5851C0.551453 14.9834 0.709687 15.3654 0.991345 15.6471C1.273 15.9287 1.65501 16.0869 2.05334 16.0869H11.0647C11.463 16.0869 11.845 15.9287 12.1267 15.6471C12.4083 15.3654 12.5665 14.9834 12.5665 14.5851V8.57751" stroke="#5A5A75" stroke-width="0.834381" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                        <path d="M9.56254 4.07201L6.55877 1.06824L3.55499 4.07201" stroke="#5A5A75" stroke-width="0.834381" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                        <path d="M6.55902 1.06824V10.8305" stroke="#5A5A75" stroke-width="0.834381" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    </svg>
+                                                    <span>поделиться</span>
+                                                </button>
+                                            </div>
+                                            <div class="recipe-card__subtitle">второе блюдо</div>
+                                            <div class="recipe-card__title">Кальмары, фаршированные кускусом</div>
+                                            <div class="recipe-card__desc">
+                                                Это ароматное мясо с кускусом и овощами, настоящее объедение. Любители вкусно покушать будут в восторге от такого блюда
+                                            </div>
+                                            <div class="recipe-card__info">
+                                                <div class="recipe-card__info-item">
+                                                    <img src="img/time.png" alt="">
+                                                    <span>1 час 40 мин</span>
+                                                </div>
+                                                <div class="recipe-card__info-item">
+                                                    <img src="img/hat.svg" alt="">
+                                                    <span>сложно</span>
+                                                </div>
+                                                <div class="recipe-card__info-item">
+                                                    <img src="img/fire.svg" alt="">
+                                                    <span>55 кал</span>
+                                                </div>
+                                            </div>
+                                            <div class="recipe-card__cart">
+                                                <button class="recipe-card__plan">
+                                                    <img src="img/calendar.svg" alt="">
+                                                    <span>добавить <br>в план</span>
+                                                </button>
+                                                <div class="recipe-card__calc ccalc">
+                                                    <button class="ccalc-minus">
+                                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M3.96722 8.92773H13.7017" stroke="#51B1A6" stroke-width="1.66876" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                        </svg>
+                                                    </button>
+                                                    <input type="text" value="1">
+                                                    <button class="ccalc-plus">
+                                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M8.9162 4.06055V13.795" stroke="#51B1A6" stroke-width="1.66876" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                            <path d="M4.04895 8.92773H13.7834" stroke="#51B1A6" stroke-width="1.66876" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                                <button class="recipe-card__cart-add">
+                                                    <img src="img/cart.svg" alt="">                                        
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="recipe__item">
+                                        <div class="recipe-card">
+                                            <div class="recipe-card__top">
+                                                <div class="recipe-card__logo">
+                                                    <img src="img/avatar2.jpg" alt="">
+                                                </div>
+                                                <div class="recipe-card__top-content">
+                                                    <div class="recipe-card__name">yourdoctor</div>
+                                                    <div class="recipe-card__profession">терапевт</div>
+                                                    <div class="recipe-card__tags">
+                                                        <a class="recipe-card__tag" href="">#без глютена</a>
+                                                        <a class="recipe-card__tag" href="">#диетическое</a>
+                                                        <a class="recipe-card__tag" href="">#легко готовить</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="recipe-card__img">
+                                                <img src="img/recipe2.jpg" alt="">
+                                            </div>
+                                            <div class="recipe-card__nav">
+                                                <button class="recipe-card__favourite recipe-card__nav-btn">
+                                                    <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M16.3422 2.39601C15.9344 1.97507 15.4503 1.64115 14.9175 1.41332C14.3846 1.1855 13.8135 1.06824 13.2367 1.06824C12.6599 1.06824 12.0888 1.1855 11.5559 1.41332C11.0231 1.64115 10.5389 1.97507 10.1312 2.39601L9.28495 3.26921L8.43871 2.39601C7.61508 1.54614 6.49799 1.06868 5.3332 1.06868C4.16841 1.06868 3.05132 1.54614 2.22769 2.39601C1.40406 3.24589 0.941345 4.39858 0.941345 5.60049C0.941345 6.8024 1.40406 7.95508 2.22769 8.80496L3.07392 9.67816L9.28495 16.0871L15.496 9.67816L16.3422 8.80496C16.7501 8.38421 17.0738 7.88465 17.2945 7.33482C17.5153 6.78499 17.629 6.19565 17.629 5.60049C17.629 5.00532 17.5153 4.41599 17.2945 3.86615C17.0738 3.31632 16.7501 2.81676 16.3422 2.39601V2.39601Z" stroke="#5A5A75" stroke-width="0.834381" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    </svg>
+                                                    <span>сохранить</span>
+                                                </button>
+                                                <button class="recipe-card__share recipe-card__nav-btn">
+                                                    <svg width="13" height="17" viewBox="0 0 13 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M0.551453 8.57751V14.5851C0.551453 14.9834 0.709687 15.3654 0.991345 15.6471C1.273 15.9287 1.65501 16.0869 2.05334 16.0869H11.0647C11.463 16.0869 11.845 15.9287 12.1267 15.6471C12.4083 15.3654 12.5665 14.9834 12.5665 14.5851V8.57751" stroke="#5A5A75" stroke-width="0.834381" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                        <path d="M9.56254 4.07201L6.55877 1.06824L3.55499 4.07201" stroke="#5A5A75" stroke-width="0.834381" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                        <path d="M6.55902 1.06824V10.8305" stroke="#5A5A75" stroke-width="0.834381" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    </svg>
+                                                    <span>поделиться</span>
+                                                </button>
+                                            </div>
+                                            <div class="recipe-card__subtitle">второе блюдо</div>
+                                            <div class="recipe-card__title">Кальмары, фаршированные кускусом</div>
+                                            <div class="recipe-card__desc">
+                                                Это ароматное мясо с кускусом и овощами, настоящее объедение. Любители вкусно покушать будут в восторге от такого блюда
+                                            </div>
+                                            <div class="recipe-card__info">
+                                                <div class="recipe-card__info-item">
+                                                    <img src="img/time.png" alt="">
+                                                    <span>1 час 40 мин</span>
+                                                </div>
+                                                <div class="recipe-card__info-item">
+                                                    <img src="img/hat.svg" alt="">
+                                                    <span>сложно</span>
+                                                </div>
+                                                <div class="recipe-card__info-item">
+                                                    <img src="img/fire.svg" alt="">
+                                                    <span>55 кал</span>
+                                                </div>
+                                            </div>
+                                            <div class="recipe-card__cart">
+                                                <button class="recipe-card__plan">
+                                                    <img src="img/calendar.svg" alt="">
+                                                    <span>добавить <br>в план</span>
+                                                </button>
+                                                <div class="recipe-card__calc ccalc">
+                                                    <button class="ccalc-minus">
+                                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M3.96722 8.92773H13.7017" stroke="#51B1A6" stroke-width="1.66876" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                        </svg>
+                                                    </button>
+                                                    <input type="text" value="1">
+                                                    <button class="ccalc-plus">
+                                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M8.9162 4.06055V13.795" stroke="#51B1A6" stroke-width="1.66876" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                            <path d="M4.04895 8.92773H13.7834" stroke="#51B1A6" stroke-width="1.66876" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                                <button class="recipe-card__cart-add">
+                                                    <img src="img/cart.svg" alt="">                                        
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="recipe__item">
+                                        <div class="recipe-card">
+                                            <div class="recipe-card__top">
+                                                <div class="recipe-card__logo">
+                                                    <img src="img/avatar2.jpg" alt="">
+                                                </div>
+                                                <div class="recipe-card__top-content">
+                                                    <div class="recipe-card__name">yourdoctor</div>
+                                                    <div class="recipe-card__profession">терапевт</div>
+                                                    <div class="recipe-card__tags">
+                                                        <a class="recipe-card__tag" href="">#без глютена</a>
+                                                        <a class="recipe-card__tag" href="">#диетическое</a>
+                                                        <a class="recipe-card__tag" href="">#легко готовить</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="recipe-card__img">
+                                                <img src="img/recipe2.jpg" alt="">
+                                            </div>
+                                            <div class="recipe-card__nav">
+                                                <button class="recipe-card__favourite recipe-card__nav-btn">
+                                                    <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M16.3422 2.39601C15.9344 1.97507 15.4503 1.64115 14.9175 1.41332C14.3846 1.1855 13.8135 1.06824 13.2367 1.06824C12.6599 1.06824 12.0888 1.1855 11.5559 1.41332C11.0231 1.64115 10.5389 1.97507 10.1312 2.39601L9.28495 3.26921L8.43871 2.39601C7.61508 1.54614 6.49799 1.06868 5.3332 1.06868C4.16841 1.06868 3.05132 1.54614 2.22769 2.39601C1.40406 3.24589 0.941345 4.39858 0.941345 5.60049C0.941345 6.8024 1.40406 7.95508 2.22769 8.80496L3.07392 9.67816L9.28495 16.0871L15.496 9.67816L16.3422 8.80496C16.7501 8.38421 17.0738 7.88465 17.2945 7.33482C17.5153 6.78499 17.629 6.19565 17.629 5.60049C17.629 5.00532 17.5153 4.41599 17.2945 3.86615C17.0738 3.31632 16.7501 2.81676 16.3422 2.39601V2.39601Z" stroke="#5A5A75" stroke-width="0.834381" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    </svg>
+                                                    <span>сохранить</span>
+                                                </button>
+                                                <button class="recipe-card__share recipe-card__nav-btn">
+                                                    <svg width="13" height="17" viewBox="0 0 13 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M0.551453 8.57751V14.5851C0.551453 14.9834 0.709687 15.3654 0.991345 15.6471C1.273 15.9287 1.65501 16.0869 2.05334 16.0869H11.0647C11.463 16.0869 11.845 15.9287 12.1267 15.6471C12.4083 15.3654 12.5665 14.9834 12.5665 14.5851V8.57751" stroke="#5A5A75" stroke-width="0.834381" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                        <path d="M9.56254 4.07201L6.55877 1.06824L3.55499 4.07201" stroke="#5A5A75" stroke-width="0.834381" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                        <path d="M6.55902 1.06824V10.8305" stroke="#5A5A75" stroke-width="0.834381" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    </svg>
+                                                    <span>поделиться</span>
+                                                </button>
+                                            </div>
+                                            <div class="recipe-card__subtitle">второе блюдо</div>
+                                            <div class="recipe-card__title">Кальмары, фаршированные кускусом</div>
+                                            <div class="recipe-card__desc">
+                                                Это ароматное мясо с кускусом и овощами, настоящее объедение. Любители вкусно покушать будут в восторге от такого блюда
+                                            </div>
+                                            <div class="recipe-card__info">
+                                                <div class="recipe-card__info-item">
+                                                    <img src="img/time.png" alt="">
+                                                    <span>1 час 40 мин</span>
+                                                </div>
+                                                <div class="recipe-card__info-item">
+                                                    <img src="img/hat.svg" alt="">
+                                                    <span>сложно</span>
+                                                </div>
+                                                <div class="recipe-card__info-item">
+                                                    <img src="img/fire.svg" alt="">
+                                                    <span>55 кал</span>
+                                                </div>
+                                            </div>
+                                            <div class="recipe-card__cart">
+                                                <button class="recipe-card__plan">
+                                                    <img src="img/calendar.svg" alt="">
+                                                    <span>добавить <br>в план</span>
+                                                </button>
+                                                <div class="recipe-card__calc ccalc">
+                                                    <button class="ccalc-minus">
+                                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M3.96722 8.92773H13.7017" stroke="#51B1A6" stroke-width="1.66876" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                        </svg>
+                                                    </button>
+                                                    <input type="text" value="1">
+                                                    <button class="ccalc-plus">
+                                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M8.9162 4.06055V13.795" stroke="#51B1A6" stroke-width="1.66876" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                            <path d="M4.04895 8.92773H13.7834" stroke="#51B1A6" stroke-width="1.66876" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                                <button class="recipe-card__cart-add">
+                                                    <img src="img/cart.svg" alt="">                                        
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="patient-pitanie__group">
+                            <div class="patient-pitanie__group-show">
+                                <div class="patient-pitanie__group-date">31.12.21</div>
+                                <div class="patient-pitanie__group-title">
+                                    <span>План питания</span>
+                                    <svg width="13" height="7" viewBox="0 0 13 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12 1L6.5 6L1 1" stroke="#5A5A75" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="patient-pitanie__group-hidden">
+                                <div class="pitanie__wrap">
+                                    <div class="recipe__item">
+                                        <div class="recipe-card">
+                                            <div class="recipe-card__top">
+                                                <div class="recipe-card__logo">
+                                                    <img src="img/avatar2.jpg" alt="">
+                                                </div>
+                                                <div class="recipe-card__top-content">
+                                                    <div class="recipe-card__name">yourdoctor</div>
+                                                    <div class="recipe-card__profession">терапевт</div>
+                                                    <div class="recipe-card__tags">
+                                                        <a class="recipe-card__tag" href="">#без глютена</a>
+                                                        <a class="recipe-card__tag" href="">#диетическое</a>
+                                                        <a class="recipe-card__tag" href="">#легко готовить</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="recipe-card__img">
+                                                <img src="img/recipe2.jpg" alt="">
+                                            </div>
+                                            <div class="recipe-card__nav">
+                                                <button class="recipe-card__favourite recipe-card__nav-btn">
+                                                    <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M16.3422 2.39601C15.9344 1.97507 15.4503 1.64115 14.9175 1.41332C14.3846 1.1855 13.8135 1.06824 13.2367 1.06824C12.6599 1.06824 12.0888 1.1855 11.5559 1.41332C11.0231 1.64115 10.5389 1.97507 10.1312 2.39601L9.28495 3.26921L8.43871 2.39601C7.61508 1.54614 6.49799 1.06868 5.3332 1.06868C4.16841 1.06868 3.05132 1.54614 2.22769 2.39601C1.40406 3.24589 0.941345 4.39858 0.941345 5.60049C0.941345 6.8024 1.40406 7.95508 2.22769 8.80496L3.07392 9.67816L9.28495 16.0871L15.496 9.67816L16.3422 8.80496C16.7501 8.38421 17.0738 7.88465 17.2945 7.33482C17.5153 6.78499 17.629 6.19565 17.629 5.60049C17.629 5.00532 17.5153 4.41599 17.2945 3.86615C17.0738 3.31632 16.7501 2.81676 16.3422 2.39601V2.39601Z" stroke="#5A5A75" stroke-width="0.834381" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    </svg>
+                                                    <span>сохранить</span>
+                                                </button>
+                                                <button class="recipe-card__share recipe-card__nav-btn">
+                                                    <svg width="13" height="17" viewBox="0 0 13 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M0.551453 8.57751V14.5851C0.551453 14.9834 0.709687 15.3654 0.991345 15.6471C1.273 15.9287 1.65501 16.0869 2.05334 16.0869H11.0647C11.463 16.0869 11.845 15.9287 12.1267 15.6471C12.4083 15.3654 12.5665 14.9834 12.5665 14.5851V8.57751" stroke="#5A5A75" stroke-width="0.834381" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                        <path d="M9.56254 4.07201L6.55877 1.06824L3.55499 4.07201" stroke="#5A5A75" stroke-width="0.834381" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                        <path d="M6.55902 1.06824V10.8305" stroke="#5A5A75" stroke-width="0.834381" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    </svg>
+                                                    <span>поделиться</span>
+                                                </button>
+                                            </div>
+                                            <div class="recipe-card__subtitle">второе блюдо</div>
+                                            <div class="recipe-card__title">Кальмары, фаршированные кускусом</div>
+                                            <div class="recipe-card__desc">
+                                                Это ароматное мясо с кускусом и овощами, настоящее объедение. Любители вкусно покушать будут в восторге от такого блюда
+                                            </div>
+                                            <div class="recipe-card__info">
+                                                <div class="recipe-card__info-item">
+                                                    <img src="img/time.png" alt="">
+                                                    <span>1 час 40 мин</span>
+                                                </div>
+                                                <div class="recipe-card__info-item">
+                                                    <img src="img/hat.svg" alt="">
+                                                    <span>сложно</span>
+                                                </div>
+                                                <div class="recipe-card__info-item">
+                                                    <img src="img/fire.svg" alt="">
+                                                    <span>55 кал</span>
+                                                </div>
+                                            </div>
+                                            <div class="recipe-card__cart">
+                                                <button class="recipe-card__plan">
+                                                    <img src="img/calendar.svg" alt="">
+                                                    <span>добавить <br>в план</span>
+                                                </button>
+                                                <div class="recipe-card__calc ccalc">
+                                                    <button class="ccalc-minus">
+                                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M3.96722 8.92773H13.7017" stroke="#51B1A6" stroke-width="1.66876" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                        </svg>
+                                                    </button>
+                                                    <input type="text" value="1">
+                                                    <button class="ccalc-plus">
+                                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M8.9162 4.06055V13.795" stroke="#51B1A6" stroke-width="1.66876" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                            <path d="M4.04895 8.92773H13.7834" stroke="#51B1A6" stroke-width="1.66876" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                                <button class="recipe-card__cart-add">
+                                                    <img src="img/cart.svg" alt="">                                        
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="recipe__item">
+                                        <div class="recipe-card">
+                                            <div class="recipe-card__top">
+                                                <div class="recipe-card__logo">
+                                                    <img src="img/avatar2.jpg" alt="">
+                                                </div>
+                                                <div class="recipe-card__top-content">
+                                                    <div class="recipe-card__name">yourdoctor</div>
+                                                    <div class="recipe-card__profession">терапевт</div>
+                                                    <div class="recipe-card__tags">
+                                                        <a class="recipe-card__tag" href="">#без глютена</a>
+                                                        <a class="recipe-card__tag" href="">#диетическое</a>
+                                                        <a class="recipe-card__tag" href="">#легко готовить</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="recipe-card__img">
+                                                <img src="img/recipe2.jpg" alt="">
+                                            </div>
+                                            <div class="recipe-card__nav">
+                                                <button class="recipe-card__favourite recipe-card__nav-btn">
+                                                    <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M16.3422 2.39601C15.9344 1.97507 15.4503 1.64115 14.9175 1.41332C14.3846 1.1855 13.8135 1.06824 13.2367 1.06824C12.6599 1.06824 12.0888 1.1855 11.5559 1.41332C11.0231 1.64115 10.5389 1.97507 10.1312 2.39601L9.28495 3.26921L8.43871 2.39601C7.61508 1.54614 6.49799 1.06868 5.3332 1.06868C4.16841 1.06868 3.05132 1.54614 2.22769 2.39601C1.40406 3.24589 0.941345 4.39858 0.941345 5.60049C0.941345 6.8024 1.40406 7.95508 2.22769 8.80496L3.07392 9.67816L9.28495 16.0871L15.496 9.67816L16.3422 8.80496C16.7501 8.38421 17.0738 7.88465 17.2945 7.33482C17.5153 6.78499 17.629 6.19565 17.629 5.60049C17.629 5.00532 17.5153 4.41599 17.2945 3.86615C17.0738 3.31632 16.7501 2.81676 16.3422 2.39601V2.39601Z" stroke="#5A5A75" stroke-width="0.834381" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    </svg>
+                                                    <span>сохранить</span>
+                                                </button>
+                                                <button class="recipe-card__share recipe-card__nav-btn">
+                                                    <svg width="13" height="17" viewBox="0 0 13 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M0.551453 8.57751V14.5851C0.551453 14.9834 0.709687 15.3654 0.991345 15.6471C1.273 15.9287 1.65501 16.0869 2.05334 16.0869H11.0647C11.463 16.0869 11.845 15.9287 12.1267 15.6471C12.4083 15.3654 12.5665 14.9834 12.5665 14.5851V8.57751" stroke="#5A5A75" stroke-width="0.834381" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                        <path d="M9.56254 4.07201L6.55877 1.06824L3.55499 4.07201" stroke="#5A5A75" stroke-width="0.834381" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                        <path d="M6.55902 1.06824V10.8305" stroke="#5A5A75" stroke-width="0.834381" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    </svg>
+                                                    <span>поделиться</span>
+                                                </button>
+                                            </div>
+                                            <div class="recipe-card__subtitle">второе блюдо</div>
+                                            <div class="recipe-card__title">Кальмары, фаршированные кускусом</div>
+                                            <div class="recipe-card__desc">
+                                                Это ароматное мясо с кускусом и овощами, настоящее объедение. Любители вкусно покушать будут в восторге от такого блюда
+                                            </div>
+                                            <div class="recipe-card__info">
+                                                <div class="recipe-card__info-item">
+                                                    <img src="img/time.png" alt="">
+                                                    <span>1 час 40 мин</span>
+                                                </div>
+                                                <div class="recipe-card__info-item">
+                                                    <img src="img/hat.svg" alt="">
+                                                    <span>сложно</span>
+                                                </div>
+                                                <div class="recipe-card__info-item">
+                                                    <img src="img/fire.svg" alt="">
+                                                    <span>55 кал</span>
+                                                </div>
+                                            </div>
+                                            <div class="recipe-card__cart">
+                                                <button class="recipe-card__plan">
+                                                    <img src="img/calendar.svg" alt="">
+                                                    <span>добавить <br>в план</span>
+                                                </button>
+                                                <div class="recipe-card__calc ccalc">
+                                                    <button class="ccalc-minus">
+                                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M3.96722 8.92773H13.7017" stroke="#51B1A6" stroke-width="1.66876" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                        </svg>
+                                                    </button>
+                                                    <input type="text" value="1">
+                                                    <button class="ccalc-plus">
+                                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M8.9162 4.06055V13.795" stroke="#51B1A6" stroke-width="1.66876" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                            <path d="M4.04895 8.92773H13.7834" stroke="#51B1A6" stroke-width="1.66876" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                                <button class="recipe-card__cart-add">
+                                                    <img src="img/cart.svg" alt="">                                        
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="recipe__item">
+                                        <div class="recipe-card">
+                                            <div class="recipe-card__top">
+                                                <div class="recipe-card__logo">
+                                                    <img src="img/avatar2.jpg" alt="">
+                                                </div>
+                                                <div class="recipe-card__top-content">
+                                                    <div class="recipe-card__name">yourdoctor</div>
+                                                    <div class="recipe-card__profession">терапевт</div>
+                                                    <div class="recipe-card__tags">
+                                                        <a class="recipe-card__tag" href="">#без глютена</a>
+                                                        <a class="recipe-card__tag" href="">#диетическое</a>
+                                                        <a class="recipe-card__tag" href="">#легко готовить</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="recipe-card__img">
+                                                <img src="img/recipe2.jpg" alt="">
+                                            </div>
+                                            <div class="recipe-card__nav">
+                                                <button class="recipe-card__favourite recipe-card__nav-btn">
+                                                    <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M16.3422 2.39601C15.9344 1.97507 15.4503 1.64115 14.9175 1.41332C14.3846 1.1855 13.8135 1.06824 13.2367 1.06824C12.6599 1.06824 12.0888 1.1855 11.5559 1.41332C11.0231 1.64115 10.5389 1.97507 10.1312 2.39601L9.28495 3.26921L8.43871 2.39601C7.61508 1.54614 6.49799 1.06868 5.3332 1.06868C4.16841 1.06868 3.05132 1.54614 2.22769 2.39601C1.40406 3.24589 0.941345 4.39858 0.941345 5.60049C0.941345 6.8024 1.40406 7.95508 2.22769 8.80496L3.07392 9.67816L9.28495 16.0871L15.496 9.67816L16.3422 8.80496C16.7501 8.38421 17.0738 7.88465 17.2945 7.33482C17.5153 6.78499 17.629 6.19565 17.629 5.60049C17.629 5.00532 17.5153 4.41599 17.2945 3.86615C17.0738 3.31632 16.7501 2.81676 16.3422 2.39601V2.39601Z" stroke="#5A5A75" stroke-width="0.834381" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    </svg>
+                                                    <span>сохранить</span>
+                                                </button>
+                                                <button class="recipe-card__share recipe-card__nav-btn">
+                                                    <svg width="13" height="17" viewBox="0 0 13 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M0.551453 8.57751V14.5851C0.551453 14.9834 0.709687 15.3654 0.991345 15.6471C1.273 15.9287 1.65501 16.0869 2.05334 16.0869H11.0647C11.463 16.0869 11.845 15.9287 12.1267 15.6471C12.4083 15.3654 12.5665 14.9834 12.5665 14.5851V8.57751" stroke="#5A5A75" stroke-width="0.834381" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                        <path d="M9.56254 4.07201L6.55877 1.06824L3.55499 4.07201" stroke="#5A5A75" stroke-width="0.834381" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                        <path d="M6.55902 1.06824V10.8305" stroke="#5A5A75" stroke-width="0.834381" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    </svg>
+                                                    <span>поделиться</span>
+                                                </button>
+                                            </div>
+                                            <div class="recipe-card__subtitle">второе блюдо</div>
+                                            <div class="recipe-card__title">Кальмары, фаршированные кускусом</div>
+                                            <div class="recipe-card__desc">
+                                                Это ароматное мясо с кускусом и овощами, настоящее объедение. Любители вкусно покушать будут в восторге от такого блюда
+                                            </div>
+                                            <div class="recipe-card__info">
+                                                <div class="recipe-card__info-item">
+                                                    <img src="img/time.png" alt="">
+                                                    <span>1 час 40 мин</span>
+                                                </div>
+                                                <div class="recipe-card__info-item">
+                                                    <img src="img/hat.svg" alt="">
+                                                    <span>сложно</span>
+                                                </div>
+                                                <div class="recipe-card__info-item">
+                                                    <img src="img/fire.svg" alt="">
+                                                    <span>55 кал</span>
+                                                </div>
+                                            </div>
+                                            <div class="recipe-card__cart">
+                                                <button class="recipe-card__plan">
+                                                    <img src="img/calendar.svg" alt="">
+                                                    <span>добавить <br>в план</span>
+                                                </button>
+                                                <div class="recipe-card__calc ccalc">
+                                                    <button class="ccalc-minus">
+                                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M3.96722 8.92773H13.7017" stroke="#51B1A6" stroke-width="1.66876" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                        </svg>
+                                                    </button>
+                                                    <input type="text" value="1">
+                                                    <button class="ccalc-plus">
+                                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M8.9162 4.06055V13.795" stroke="#51B1A6" stroke-width="1.66876" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                            <path d="M4.04895 8.92773H13.7834" stroke="#51B1A6" stroke-width="1.66876" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                                <button class="recipe-card__cart-add">
+                                                    <img src="img/cart.svg" alt="">                                        
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="patient-pitanie__group">
+                            <div class="patient-pitanie__group-show">
+                                <div class="patient-pitanie__group-date">31.12.21</div>
+                                <div class="patient-pitanie__group-title">
+                                    <span>План питания</span>
+                                    <svg width="13" height="7" viewBox="0 0 13 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12 1L6.5 6L1 1" stroke="#5A5A75" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="patient-pitanie__group-hidden">
+                                <div class="pitanie__wrap">
+                                    <div class="recipe__item">
+                                        <div class="recipe-card">
+                                            <div class="recipe-card__top">
+                                                <div class="recipe-card__logo">
+                                                    <img src="img/avatar2.jpg" alt="">
+                                                </div>
+                                                <div class="recipe-card__top-content">
+                                                    <div class="recipe-card__name">yourdoctor</div>
+                                                    <div class="recipe-card__profession">терапевт</div>
+                                                    <div class="recipe-card__tags">
+                                                        <a class="recipe-card__tag" href="">#без глютена</a>
+                                                        <a class="recipe-card__tag" href="">#диетическое</a>
+                                                        <a class="recipe-card__tag" href="">#легко готовить</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="recipe-card__img">
+                                                <img src="img/recipe2.jpg" alt="">
+                                            </div>
+                                            <div class="recipe-card__nav">
+                                                <button class="recipe-card__favourite recipe-card__nav-btn">
+                                                    <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M16.3422 2.39601C15.9344 1.97507 15.4503 1.64115 14.9175 1.41332C14.3846 1.1855 13.8135 1.06824 13.2367 1.06824C12.6599 1.06824 12.0888 1.1855 11.5559 1.41332C11.0231 1.64115 10.5389 1.97507 10.1312 2.39601L9.28495 3.26921L8.43871 2.39601C7.61508 1.54614 6.49799 1.06868 5.3332 1.06868C4.16841 1.06868 3.05132 1.54614 2.22769 2.39601C1.40406 3.24589 0.941345 4.39858 0.941345 5.60049C0.941345 6.8024 1.40406 7.95508 2.22769 8.80496L3.07392 9.67816L9.28495 16.0871L15.496 9.67816L16.3422 8.80496C16.7501 8.38421 17.0738 7.88465 17.2945 7.33482C17.5153 6.78499 17.629 6.19565 17.629 5.60049C17.629 5.00532 17.5153 4.41599 17.2945 3.86615C17.0738 3.31632 16.7501 2.81676 16.3422 2.39601V2.39601Z" stroke="#5A5A75" stroke-width="0.834381" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    </svg>
+                                                    <span>сохранить</span>
+                                                </button>
+                                                <button class="recipe-card__share recipe-card__nav-btn">
+                                                    <svg width="13" height="17" viewBox="0 0 13 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M0.551453 8.57751V14.5851C0.551453 14.9834 0.709687 15.3654 0.991345 15.6471C1.273 15.9287 1.65501 16.0869 2.05334 16.0869H11.0647C11.463 16.0869 11.845 15.9287 12.1267 15.6471C12.4083 15.3654 12.5665 14.9834 12.5665 14.5851V8.57751" stroke="#5A5A75" stroke-width="0.834381" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                        <path d="M9.56254 4.07201L6.55877 1.06824L3.55499 4.07201" stroke="#5A5A75" stroke-width="0.834381" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                        <path d="M6.55902 1.06824V10.8305" stroke="#5A5A75" stroke-width="0.834381" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    </svg>
+                                                    <span>поделиться</span>
+                                                </button>
+                                            </div>
+                                            <div class="recipe-card__subtitle">второе блюдо</div>
+                                            <div class="recipe-card__title">Кальмары, фаршированные кускусом</div>
+                                            <div class="recipe-card__desc">
+                                                Это ароматное мясо с кускусом и овощами, настоящее объедение. Любители вкусно покушать будут в восторге от такого блюда
+                                            </div>
+                                            <div class="recipe-card__info">
+                                                <div class="recipe-card__info-item">
+                                                    <img src="img/time.png" alt="">
+                                                    <span>1 час 40 мин</span>
+                                                </div>
+                                                <div class="recipe-card__info-item">
+                                                    <img src="img/hat.svg" alt="">
+                                                    <span>сложно</span>
+                                                </div>
+                                                <div class="recipe-card__info-item">
+                                                    <img src="img/fire.svg" alt="">
+                                                    <span>55 кал</span>
+                                                </div>
+                                            </div>
+                                            <div class="recipe-card__cart">
+                                                <button class="recipe-card__plan">
+                                                    <img src="img/calendar.svg" alt="">
+                                                    <span>добавить <br>в план</span>
+                                                </button>
+                                                <div class="recipe-card__calc ccalc">
+                                                    <button class="ccalc-minus">
+                                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M3.96722 8.92773H13.7017" stroke="#51B1A6" stroke-width="1.66876" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                        </svg>
+                                                    </button>
+                                                    <input type="text" value="1">
+                                                    <button class="ccalc-plus">
+                                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M8.9162 4.06055V13.795" stroke="#51B1A6" stroke-width="1.66876" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                            <path d="M4.04895 8.92773H13.7834" stroke="#51B1A6" stroke-width="1.66876" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                                <button class="recipe-card__cart-add">
+                                                    <img src="img/cart.svg" alt="">                                        
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="recipe__item">
+                                        <div class="recipe-card">
+                                            <div class="recipe-card__top">
+                                                <div class="recipe-card__logo">
+                                                    <img src="img/avatar2.jpg" alt="">
+                                                </div>
+                                                <div class="recipe-card__top-content">
+                                                    <div class="recipe-card__name">yourdoctor</div>
+                                                    <div class="recipe-card__profession">терапевт</div>
+                                                    <div class="recipe-card__tags">
+                                                        <a class="recipe-card__tag" href="">#без глютена</a>
+                                                        <a class="recipe-card__tag" href="">#диетическое</a>
+                                                        <a class="recipe-card__tag" href="">#легко готовить</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="recipe-card__img">
+                                                <img src="img/recipe2.jpg" alt="">
+                                            </div>
+                                            <div class="recipe-card__nav">
+                                                <button class="recipe-card__favourite recipe-card__nav-btn">
+                                                    <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M16.3422 2.39601C15.9344 1.97507 15.4503 1.64115 14.9175 1.41332C14.3846 1.1855 13.8135 1.06824 13.2367 1.06824C12.6599 1.06824 12.0888 1.1855 11.5559 1.41332C11.0231 1.64115 10.5389 1.97507 10.1312 2.39601L9.28495 3.26921L8.43871 2.39601C7.61508 1.54614 6.49799 1.06868 5.3332 1.06868C4.16841 1.06868 3.05132 1.54614 2.22769 2.39601C1.40406 3.24589 0.941345 4.39858 0.941345 5.60049C0.941345 6.8024 1.40406 7.95508 2.22769 8.80496L3.07392 9.67816L9.28495 16.0871L15.496 9.67816L16.3422 8.80496C16.7501 8.38421 17.0738 7.88465 17.2945 7.33482C17.5153 6.78499 17.629 6.19565 17.629 5.60049C17.629 5.00532 17.5153 4.41599 17.2945 3.86615C17.0738 3.31632 16.7501 2.81676 16.3422 2.39601V2.39601Z" stroke="#5A5A75" stroke-width="0.834381" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    </svg>
+                                                    <span>сохранить</span>
+                                                </button>
+                                                <button class="recipe-card__share recipe-card__nav-btn">
+                                                    <svg width="13" height="17" viewBox="0 0 13 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M0.551453 8.57751V14.5851C0.551453 14.9834 0.709687 15.3654 0.991345 15.6471C1.273 15.9287 1.65501 16.0869 2.05334 16.0869H11.0647C11.463 16.0869 11.845 15.9287 12.1267 15.6471C12.4083 15.3654 12.5665 14.9834 12.5665 14.5851V8.57751" stroke="#5A5A75" stroke-width="0.834381" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                        <path d="M9.56254 4.07201L6.55877 1.06824L3.55499 4.07201" stroke="#5A5A75" stroke-width="0.834381" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                        <path d="M6.55902 1.06824V10.8305" stroke="#5A5A75" stroke-width="0.834381" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    </svg>
+                                                    <span>поделиться</span>
+                                                </button>
+                                            </div>
+                                            <div class="recipe-card__subtitle">второе блюдо</div>
+                                            <div class="recipe-card__title">Кальмары, фаршированные кускусом</div>
+                                            <div class="recipe-card__desc">
+                                                Это ароматное мясо с кускусом и овощами, настоящее объедение. Любители вкусно покушать будут в восторге от такого блюда
+                                            </div>
+                                            <div class="recipe-card__info">
+                                                <div class="recipe-card__info-item">
+                                                    <img src="img/time.png" alt="">
+                                                    <span>1 час 40 мин</span>
+                                                </div>
+                                                <div class="recipe-card__info-item">
+                                                    <img src="img/hat.svg" alt="">
+                                                    <span>сложно</span>
+                                                </div>
+                                                <div class="recipe-card__info-item">
+                                                    <img src="img/fire.svg" alt="">
+                                                    <span>55 кал</span>
+                                                </div>
+                                            </div>
+                                            <div class="recipe-card__cart">
+                                                <button class="recipe-card__plan">
+                                                    <img src="img/calendar.svg" alt="">
+                                                    <span>добавить <br>в план</span>
+                                                </button>
+                                                <div class="recipe-card__calc ccalc">
+                                                    <button class="ccalc-minus">
+                                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M3.96722 8.92773H13.7017" stroke="#51B1A6" stroke-width="1.66876" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                        </svg>
+                                                    </button>
+                                                    <input type="text" value="1">
+                                                    <button class="ccalc-plus">
+                                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M8.9162 4.06055V13.795" stroke="#51B1A6" stroke-width="1.66876" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                            <path d="M4.04895 8.92773H13.7834" stroke="#51B1A6" stroke-width="1.66876" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                                <button class="recipe-card__cart-add">
+                                                    <img src="img/cart.svg" alt="">                                        
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="recipe__item">
+                                        <div class="recipe-card">
+                                            <div class="recipe-card__top">
+                                                <div class="recipe-card__logo">
+                                                    <img src="img/avatar2.jpg" alt="">
+                                                </div>
+                                                <div class="recipe-card__top-content">
+                                                    <div class="recipe-card__name">yourdoctor</div>
+                                                    <div class="recipe-card__profession">терапевт</div>
+                                                    <div class="recipe-card__tags">
+                                                        <a class="recipe-card__tag" href="">#без глютена</a>
+                                                        <a class="recipe-card__tag" href="">#диетическое</a>
+                                                        <a class="recipe-card__tag" href="">#легко готовить</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="recipe-card__img">
+                                                <img src="img/recipe2.jpg" alt="">
+                                            </div>
+                                            <div class="recipe-card__nav">
+                                                <button class="recipe-card__favourite recipe-card__nav-btn">
+                                                    <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M16.3422 2.39601C15.9344 1.97507 15.4503 1.64115 14.9175 1.41332C14.3846 1.1855 13.8135 1.06824 13.2367 1.06824C12.6599 1.06824 12.0888 1.1855 11.5559 1.41332C11.0231 1.64115 10.5389 1.97507 10.1312 2.39601L9.28495 3.26921L8.43871 2.39601C7.61508 1.54614 6.49799 1.06868 5.3332 1.06868C4.16841 1.06868 3.05132 1.54614 2.22769 2.39601C1.40406 3.24589 0.941345 4.39858 0.941345 5.60049C0.941345 6.8024 1.40406 7.95508 2.22769 8.80496L3.07392 9.67816L9.28495 16.0871L15.496 9.67816L16.3422 8.80496C16.7501 8.38421 17.0738 7.88465 17.2945 7.33482C17.5153 6.78499 17.629 6.19565 17.629 5.60049C17.629 5.00532 17.5153 4.41599 17.2945 3.86615C17.0738 3.31632 16.7501 2.81676 16.3422 2.39601V2.39601Z" stroke="#5A5A75" stroke-width="0.834381" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    </svg>
+                                                    <span>сохранить</span>
+                                                </button>
+                                                <button class="recipe-card__share recipe-card__nav-btn">
+                                                    <svg width="13" height="17" viewBox="0 0 13 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M0.551453 8.57751V14.5851C0.551453 14.9834 0.709687 15.3654 0.991345 15.6471C1.273 15.9287 1.65501 16.0869 2.05334 16.0869H11.0647C11.463 16.0869 11.845 15.9287 12.1267 15.6471C12.4083 15.3654 12.5665 14.9834 12.5665 14.5851V8.57751" stroke="#5A5A75" stroke-width="0.834381" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                        <path d="M9.56254 4.07201L6.55877 1.06824L3.55499 4.07201" stroke="#5A5A75" stroke-width="0.834381" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                        <path d="M6.55902 1.06824V10.8305" stroke="#5A5A75" stroke-width="0.834381" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    </svg>
+                                                    <span>поделиться</span>
+                                                </button>
+                                            </div>
+                                            <div class="recipe-card__subtitle">второе блюдо</div>
+                                            <div class="recipe-card__title">Кальмары, фаршированные кускусом</div>
+                                            <div class="recipe-card__desc">
+                                                Это ароматное мясо с кускусом и овощами, настоящее объедение. Любители вкусно покушать будут в восторге от такого блюда
+                                            </div>
+                                            <div class="recipe-card__info">
+                                                <div class="recipe-card__info-item">
+                                                    <img src="img/time.png" alt="">
+                                                    <span>1 час 40 мин</span>
+                                                </div>
+                                                <div class="recipe-card__info-item">
+                                                    <img src="img/hat.svg" alt="">
+                                                    <span>сложно</span>
+                                                </div>
+                                                <div class="recipe-card__info-item">
+                                                    <img src="img/fire.svg" alt="">
+                                                    <span>55 кал</span>
+                                                </div>
+                                            </div>
+                                            <div class="recipe-card__cart">
+                                                <button class="recipe-card__plan">
+                                                    <img src="img/calendar.svg" alt="">
+                                                    <span>добавить <br>в план</span>
+                                                </button>
+                                                <div class="recipe-card__calc ccalc">
+                                                    <button class="ccalc-minus">
+                                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M3.96722 8.92773H13.7017" stroke="#51B1A6" stroke-width="1.66876" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                        </svg>
+                                                    </button>
+                                                    <input type="text" value="1">
+                                                    <button class="ccalc-plus">
+                                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M8.9162 4.06055V13.795" stroke="#51B1A6" stroke-width="1.66876" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                            <path d="M4.04895 8.92773H13.7834" stroke="#51B1A6" stroke-width="1.66876" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                                <button class="recipe-card__cart-add">
+                                                    <img src="img/cart.svg" alt="">                                        
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="patient-pitanie__group">
+                            <div class="patient-pitanie__group-show">
+                                <div class="patient-pitanie__group-date">31.12.21</div>
+                                <div class="patient-pitanie__group-title">
+                                    <span>План питания</span>
+                                    <svg width="13" height="7" viewBox="0 0 13 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12 1L6.5 6L1 1" stroke="#5A5A75" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="patient-pitanie__group-hidden">
+                                <div class="pitanie__wrap">
+                                    <div class="recipe__item">
+                                        <div class="recipe-card">
+                                            <div class="recipe-card__top">
+                                                <div class="recipe-card__logo">
+                                                    <img src="img/avatar2.jpg" alt="">
+                                                </div>
+                                                <div class="recipe-card__top-content">
+                                                    <div class="recipe-card__name">yourdoctor</div>
+                                                    <div class="recipe-card__profession">терапевт</div>
+                                                    <div class="recipe-card__tags">
+                                                        <a class="recipe-card__tag" href="">#без глютена</a>
+                                                        <a class="recipe-card__tag" href="">#диетическое</a>
+                                                        <a class="recipe-card__tag" href="">#легко готовить</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="recipe-card__img">
+                                                <img src="img/recipe2.jpg" alt="">
+                                            </div>
+                                            <div class="recipe-card__nav">
+                                                <button class="recipe-card__favourite recipe-card__nav-btn">
+                                                    <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M16.3422 2.39601C15.9344 1.97507 15.4503 1.64115 14.9175 1.41332C14.3846 1.1855 13.8135 1.06824 13.2367 1.06824C12.6599 1.06824 12.0888 1.1855 11.5559 1.41332C11.0231 1.64115 10.5389 1.97507 10.1312 2.39601L9.28495 3.26921L8.43871 2.39601C7.61508 1.54614 6.49799 1.06868 5.3332 1.06868C4.16841 1.06868 3.05132 1.54614 2.22769 2.39601C1.40406 3.24589 0.941345 4.39858 0.941345 5.60049C0.941345 6.8024 1.40406 7.95508 2.22769 8.80496L3.07392 9.67816L9.28495 16.0871L15.496 9.67816L16.3422 8.80496C16.7501 8.38421 17.0738 7.88465 17.2945 7.33482C17.5153 6.78499 17.629 6.19565 17.629 5.60049C17.629 5.00532 17.5153 4.41599 17.2945 3.86615C17.0738 3.31632 16.7501 2.81676 16.3422 2.39601V2.39601Z" stroke="#5A5A75" stroke-width="0.834381" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    </svg>
+                                                    <span>сохранить</span>
+                                                </button>
+                                                <button class="recipe-card__share recipe-card__nav-btn">
+                                                    <svg width="13" height="17" viewBox="0 0 13 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M0.551453 8.57751V14.5851C0.551453 14.9834 0.709687 15.3654 0.991345 15.6471C1.273 15.9287 1.65501 16.0869 2.05334 16.0869H11.0647C11.463 16.0869 11.845 15.9287 12.1267 15.6471C12.4083 15.3654 12.5665 14.9834 12.5665 14.5851V8.57751" stroke="#5A5A75" stroke-width="0.834381" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                        <path d="M9.56254 4.07201L6.55877 1.06824L3.55499 4.07201" stroke="#5A5A75" stroke-width="0.834381" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                        <path d="M6.55902 1.06824V10.8305" stroke="#5A5A75" stroke-width="0.834381" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    </svg>
+                                                    <span>поделиться</span>
+                                                </button>
+                                            </div>
+                                            <div class="recipe-card__subtitle">второе блюдо</div>
+                                            <div class="recipe-card__title">Кальмары, фаршированные кускусом</div>
+                                            <div class="recipe-card__desc">
+                                                Это ароматное мясо с кускусом и овощами, настоящее объедение. Любители вкусно покушать будут в восторге от такого блюда
+                                            </div>
+                                            <div class="recipe-card__info">
+                                                <div class="recipe-card__info-item">
+                                                    <img src="img/time.png" alt="">
+                                                    <span>1 час 40 мин</span>
+                                                </div>
+                                                <div class="recipe-card__info-item">
+                                                    <img src="img/hat.svg" alt="">
+                                                    <span>сложно</span>
+                                                </div>
+                                                <div class="recipe-card__info-item">
+                                                    <img src="img/fire.svg" alt="">
+                                                    <span>55 кал</span>
+                                                </div>
+                                            </div>
+                                            <div class="recipe-card__cart">
+                                                <button class="recipe-card__plan">
+                                                    <img src="img/calendar.svg" alt="">
+                                                    <span>добавить <br>в план</span>
+                                                </button>
+                                                <div class="recipe-card__calc ccalc">
+                                                    <button class="ccalc-minus">
+                                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M3.96722 8.92773H13.7017" stroke="#51B1A6" stroke-width="1.66876" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                        </svg>
+                                                    </button>
+                                                    <input type="text" value="1">
+                                                    <button class="ccalc-plus">
+                                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M8.9162 4.06055V13.795" stroke="#51B1A6" stroke-width="1.66876" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                            <path d="M4.04895 8.92773H13.7834" stroke="#51B1A6" stroke-width="1.66876" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                                <button class="recipe-card__cart-add">
+                                                    <img src="img/cart.svg" alt="">                                        
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="recipe__item">
+                                        <div class="recipe-card">
+                                            <div class="recipe-card__top">
+                                                <div class="recipe-card__logo">
+                                                    <img src="img/avatar2.jpg" alt="">
+                                                </div>
+                                                <div class="recipe-card__top-content">
+                                                    <div class="recipe-card__name">yourdoctor</div>
+                                                    <div class="recipe-card__profession">терапевт</div>
+                                                    <div class="recipe-card__tags">
+                                                        <a class="recipe-card__tag" href="">#без глютена</a>
+                                                        <a class="recipe-card__tag" href="">#диетическое</a>
+                                                        <a class="recipe-card__tag" href="">#легко готовить</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="recipe-card__img">
+                                                <img src="img/recipe2.jpg" alt="">
+                                            </div>
+                                            <div class="recipe-card__nav">
+                                                <button class="recipe-card__favourite recipe-card__nav-btn">
+                                                    <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M16.3422 2.39601C15.9344 1.97507 15.4503 1.64115 14.9175 1.41332C14.3846 1.1855 13.8135 1.06824 13.2367 1.06824C12.6599 1.06824 12.0888 1.1855 11.5559 1.41332C11.0231 1.64115 10.5389 1.97507 10.1312 2.39601L9.28495 3.26921L8.43871 2.39601C7.61508 1.54614 6.49799 1.06868 5.3332 1.06868C4.16841 1.06868 3.05132 1.54614 2.22769 2.39601C1.40406 3.24589 0.941345 4.39858 0.941345 5.60049C0.941345 6.8024 1.40406 7.95508 2.22769 8.80496L3.07392 9.67816L9.28495 16.0871L15.496 9.67816L16.3422 8.80496C16.7501 8.38421 17.0738 7.88465 17.2945 7.33482C17.5153 6.78499 17.629 6.19565 17.629 5.60049C17.629 5.00532 17.5153 4.41599 17.2945 3.86615C17.0738 3.31632 16.7501 2.81676 16.3422 2.39601V2.39601Z" stroke="#5A5A75" stroke-width="0.834381" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    </svg>
+                                                    <span>сохранить</span>
+                                                </button>
+                                                <button class="recipe-card__share recipe-card__nav-btn">
+                                                    <svg width="13" height="17" viewBox="0 0 13 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M0.551453 8.57751V14.5851C0.551453 14.9834 0.709687 15.3654 0.991345 15.6471C1.273 15.9287 1.65501 16.0869 2.05334 16.0869H11.0647C11.463 16.0869 11.845 15.9287 12.1267 15.6471C12.4083 15.3654 12.5665 14.9834 12.5665 14.5851V8.57751" stroke="#5A5A75" stroke-width="0.834381" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                        <path d="M9.56254 4.07201L6.55877 1.06824L3.55499 4.07201" stroke="#5A5A75" stroke-width="0.834381" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                        <path d="M6.55902 1.06824V10.8305" stroke="#5A5A75" stroke-width="0.834381" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    </svg>
+                                                    <span>поделиться</span>
+                                                </button>
+                                            </div>
+                                            <div class="recipe-card__subtitle">второе блюдо</div>
+                                            <div class="recipe-card__title">Кальмары, фаршированные кускусом</div>
+                                            <div class="recipe-card__desc">
+                                                Это ароматное мясо с кускусом и овощами, настоящее объедение. Любители вкусно покушать будут в восторге от такого блюда
+                                            </div>
+                                            <div class="recipe-card__info">
+                                                <div class="recipe-card__info-item">
+                                                    <img src="img/time.png" alt="">
+                                                    <span>1 час 40 мин</span>
+                                                </div>
+                                                <div class="recipe-card__info-item">
+                                                    <img src="img/hat.svg" alt="">
+                                                    <span>сложно</span>
+                                                </div>
+                                                <div class="recipe-card__info-item">
+                                                    <img src="img/fire.svg" alt="">
+                                                    <span>55 кал</span>
+                                                </div>
+                                            </div>
+                                            <div class="recipe-card__cart">
+                                                <button class="recipe-card__plan">
+                                                    <img src="img/calendar.svg" alt="">
+                                                    <span>добавить <br>в план</span>
+                                                </button>
+                                                <div class="recipe-card__calc ccalc">
+                                                    <button class="ccalc-minus">
+                                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M3.96722 8.92773H13.7017" stroke="#51B1A6" stroke-width="1.66876" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                        </svg>
+                                                    </button>
+                                                    <input type="text" value="1">
+                                                    <button class="ccalc-plus">
+                                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M8.9162 4.06055V13.795" stroke="#51B1A6" stroke-width="1.66876" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                            <path d="M4.04895 8.92773H13.7834" stroke="#51B1A6" stroke-width="1.66876" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                                <button class="recipe-card__cart-add">
+                                                    <img src="img/cart.svg" alt="">                                        
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="recipe__item">
+                                        <div class="recipe-card">
+                                            <div class="recipe-card__top">
+                                                <div class="recipe-card__logo">
+                                                    <img src="img/avatar2.jpg" alt="">
+                                                </div>
+                                                <div class="recipe-card__top-content">
+                                                    <div class="recipe-card__name">yourdoctor</div>
+                                                    <div class="recipe-card__profession">терапевт</div>
+                                                    <div class="recipe-card__tags">
+                                                        <a class="recipe-card__tag" href="">#без глютена</a>
+                                                        <a class="recipe-card__tag" href="">#диетическое</a>
+                                                        <a class="recipe-card__tag" href="">#легко готовить</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="recipe-card__img">
+                                                <img src="img/recipe2.jpg" alt="">
+                                            </div>
+                                            <div class="recipe-card__nav">
+                                                <button class="recipe-card__favourite recipe-card__nav-btn">
+                                                    <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M16.3422 2.39601C15.9344 1.97507 15.4503 1.64115 14.9175 1.41332C14.3846 1.1855 13.8135 1.06824 13.2367 1.06824C12.6599 1.06824 12.0888 1.1855 11.5559 1.41332C11.0231 1.64115 10.5389 1.97507 10.1312 2.39601L9.28495 3.26921L8.43871 2.39601C7.61508 1.54614 6.49799 1.06868 5.3332 1.06868C4.16841 1.06868 3.05132 1.54614 2.22769 2.39601C1.40406 3.24589 0.941345 4.39858 0.941345 5.60049C0.941345 6.8024 1.40406 7.95508 2.22769 8.80496L3.07392 9.67816L9.28495 16.0871L15.496 9.67816L16.3422 8.80496C16.7501 8.38421 17.0738 7.88465 17.2945 7.33482C17.5153 6.78499 17.629 6.19565 17.629 5.60049C17.629 5.00532 17.5153 4.41599 17.2945 3.86615C17.0738 3.31632 16.7501 2.81676 16.3422 2.39601V2.39601Z" stroke="#5A5A75" stroke-width="0.834381" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    </svg>
+                                                    <span>сохранить</span>
+                                                </button>
+                                                <button class="recipe-card__share recipe-card__nav-btn">
+                                                    <svg width="13" height="17" viewBox="0 0 13 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M0.551453 8.57751V14.5851C0.551453 14.9834 0.709687 15.3654 0.991345 15.6471C1.273 15.9287 1.65501 16.0869 2.05334 16.0869H11.0647C11.463 16.0869 11.845 15.9287 12.1267 15.6471C12.4083 15.3654 12.5665 14.9834 12.5665 14.5851V8.57751" stroke="#5A5A75" stroke-width="0.834381" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                        <path d="M9.56254 4.07201L6.55877 1.06824L3.55499 4.07201" stroke="#5A5A75" stroke-width="0.834381" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                        <path d="M6.55902 1.06824V10.8305" stroke="#5A5A75" stroke-width="0.834381" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    </svg>
+                                                    <span>поделиться</span>
+                                                </button>
+                                            </div>
+                                            <div class="recipe-card__subtitle">второе блюдо</div>
+                                            <div class="recipe-card__title">Кальмары, фаршированные кускусом</div>
+                                            <div class="recipe-card__desc">
+                                                Это ароматное мясо с кускусом и овощами, настоящее объедение. Любители вкусно покушать будут в восторге от такого блюда
+                                            </div>
+                                            <div class="recipe-card__info">
+                                                <div class="recipe-card__info-item">
+                                                    <img src="img/time.png" alt="">
+                                                    <span>1 час 40 мин</span>
+                                                </div>
+                                                <div class="recipe-card__info-item">
+                                                    <img src="img/hat.svg" alt="">
+                                                    <span>сложно</span>
+                                                </div>
+                                                <div class="recipe-card__info-item">
+                                                    <img src="img/fire.svg" alt="">
+                                                    <span>55 кал</span>
+                                                </div>
+                                            </div>
+                                            <div class="recipe-card__cart">
+                                                <button class="recipe-card__plan">
+                                                    <img src="img/calendar.svg" alt="">
+                                                    <span>добавить <br>в план</span>
+                                                </button>
+                                                <div class="recipe-card__calc ccalc">
+                                                    <button class="ccalc-minus">
+                                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M3.96722 8.92773H13.7017" stroke="#51B1A6" stroke-width="1.66876" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                        </svg>
+                                                    </button>
+                                                    <input type="text" value="1">
+                                                    <button class="ccalc-plus">
+                                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M8.9162 4.06055V13.795" stroke="#51B1A6" stroke-width="1.66876" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                            <path d="M4.04895 8.92773H13.7834" stroke="#51B1A6" stroke-width="1.66876" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                                <button class="recipe-card__cart-add">
+                                                    <img src="img/cart.svg" alt="">                                        
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="patient-pitanie__all">показать еще</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <script src="js/swiper.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

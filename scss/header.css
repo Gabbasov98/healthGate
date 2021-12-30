@@ -1,21 +1,21 @@
 /*
 Error: Undefined variable: "$blackLight".
-        on line 22 of D:\work\freelance\HealthGateMarkup\scss\header.scss
+        on line 23 of D:\work\freelance-old\HealthGateMarkup\scss\header.scss
 
-17:     &__title {
-18:         font-weight: bold;
-19:         font-size: 22px;
-20:         line-height: 30px;
-21:         margin-top: 14px;
-22:         color: $blackLight;
-23:     }
-24:     &__desc {
-25:         font-weight: 300;
-26:         font-size: 12px;
-27:         line-height: 104.4%;
+18:     &__title {
+19:         font-weight: bold;
+20:         font-size: 22px;
+21:         line-height: 30px;
+22:         margin-top: 14px;
+23:         color: $blackLight;
+24:     }
+25:     &__desc {
+26:         font-weight: 300;
+27:         font-size: 12px;
+28:         line-height: 104.4%;
 
 Backtrace:
-D:\work\freelance\HealthGateMarkup\scss\header.scss:22
+D:\work\freelance-old\HealthGateMarkup\scss\header.scss:23
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/variable.rb:49:in `_perform'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/node.rb:50:in `perform'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:402:in `visit_prop'
@@ -73,4 +73,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$blackLight\".\A         on line 22 of D:\work\freelance\HealthGateMarkup\scss\header.scss\A \A 17:     &__title {\A 18:         font-weight: bold;\A 19:         font-size: 22px;\A 20:         line-height: 30px;\A 21:         margin-top: 14px;\A 22:         color: $blackLight;\A 23:     }\A 24:     &__desc {\A 25:         font-weight: 300;\A 26:         font-size: 12px;\A 27:         line-height: 104.4%;"; }
+  content: "Error: Undefined variable: \"$blackLight\".\A         on line 23 of D:\work\freelance-old\HealthGateMarkup\scss\header.scss\A \A 18:     &__title {\A 19:         font-weight: bold;\A 20:         font-size: 22px;\A 21:         line-height: 30px;\A 22:         margin-top: 14px;\A 23:         color: $blackLight;\A 24:     }\A 25:     &__desc {\A 26:         font-weight: 300;\A 27:         font-size: 12px;\A 28:         line-height: 104.4%;"; }

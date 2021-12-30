@@ -1,0 +1,101 @@
+.pitanie {
+    &__top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        &-left {
+            display: flex;
+            align-items: center;
+        }
+    }
+    &__title {
+        margin-bottom: 0;
+        margin-right: 15px;
+    }
+    &__add,
+    &__draft {
+        width: 210px;
+        height: 37px;
+        margin-left: 30px;
+        font-size: 17px;
+        line-height: 23px;
+        border-radius: 16px;
+    }
+    &__upload {
+        position: relative;
+        &-hidden {
+            position: absolute;
+            top: 100%;
+            right: 0;
+            z-index: 3;
+            padding: 60px 23px 23px;
+            background-image: url(../img/dropdown-bg.png);
+            background-size: 100% 100%;
+            width: 500px;
+        }
+        &-btn {
+            font-size: 18px;
+            line-height: 25px;
+            text-decoration-line: underline;
+            color: #51B1A6;
+        }
+        &-add {
+            width: 143px;
+            height: 37px;
+            margin: 20px 0 0 auto;
+            font-size: 17px;
+            border-radius: 16px;
+        }
+    }
+    &__wrap {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 30px;
+        margin-top: 35px;
+    }
+}
+
+@media screen and (max-width: 1460px) {
+    .pitanie {
+        &__top {
+            display: block;
+        }
+        &__upload {
+            margin-top: 20px;
+            &-btn {
+                margin-left: auto;
+            }
+        }
+        &__wrap {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .pitanie {
+        &__top {
+            &-left {
+                display: block;
+            }
+        }
+        &__add,
+        &__draft {
+            margin-top: 15px;
+            margin-left: 0;
+        }
+        &__wrap {
+            grid-template-columns: 1fr;
+        }
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .pitanie {
+        &__upload {
+            &-hidden {
+                width: 100%;
+            }
+        }
+    }
+}

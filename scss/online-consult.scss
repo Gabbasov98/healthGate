@@ -1,0 +1,173 @@
+.online-consult {
+    &__card {
+        background: #FFFFFF;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.06);
+        border-radius: 21px;
+        max-width: 430px;
+        margin-top: 25px;
+        padding: 30px 20px 20px;
+    }
+    &__img {
+        width: 92px;
+        height: 92px;
+        margin: 0 auto;
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    &__name {
+        font-weight: bold;
+        font-size: 30px;
+        letter-spacing: -0.02em;
+        color: #5A5A75;
+        margin-top: 17px;
+        text-align: center;
+    }
+    &__profession {
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 22px;
+        color: #969799;
+        text-align: center;
+    }
+    &__date {
+        margin-top: 45px;
+        &-hint {
+            text-align: center;
+            font-size: 18px;
+            line-height: 18px;
+            letter-spacing: -0.01em;
+            color: #6B7280;
+        }
+        .form-group {
+            margin-top: 22px;
+        }
+        input {
+            padding: 0 10px;
+        }
+    }
+    &__time {
+        margin-top: 35px;
+        &-title {
+            font-size: 18px;
+            line-height: 18px;
+            letter-spacing: -0.01em;
+            color: #6B7280;
+        }
+        &-wrap {
+            margin-top: 10px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            gap: 10px;
+        }
+        &-item {
+            position: relative;
+            input {
+                position: absolute;
+                width: 1px;
+                height: 1px;
+                opacity: 0;
+                &:checked+label {
+                    background-color: #51B1A6;
+                    color: #fff;
+                }
+            }
+            label {
+                width: 100%;
+                height: 41px;
+                border-radius: 15px;
+                border: 1px solid #51B1A6;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-weight: bold;
+                font-size: 19.25px;
+                line-height: 26px;
+                color: #51B1A6;
+                cursor: pointer;
+            }
+        }
+    }
+    &__price {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 140%;
+        letter-spacing: -0.02em;
+        color: #5A5A75;
+        margin-top: 50px;
+        svg {
+            margin-right: 10px;
+        }
+    }
+    &__consult {
+        margin-top: 45px;
+        &-title {
+            font-size: 18px;
+            line-height: 18px;
+            letter-spacing: -0.01em;
+            color: #6B7280;
+        }
+        &-item {
+            margin-top: 20px !important;
+            &-title {
+                font-weight: bold;
+                font-size: 18px;
+                letter-spacing: -0.01em;
+                color: #6B7280;
+                display: block;
+            }
+            &-address {
+                font-size: 16px;
+                line-height: 18px;
+                letter-spacing: -0.01em;
+                color: #6B7280;
+                display: block;
+                margin-top: 5px;
+            }
+            &-day {
+                font-size: 16px;
+                line-height: 18px;
+                letter-spacing: -0.01em;
+                color: #51B1A6;
+                margin-top: 2px;
+                display: block;
+            }
+        }
+    }
+    &__btn {
+        width: 430px;
+        height: 55px;
+        margin-top: 30px;
+        border-radius: 22px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .online-consult {
+        &__btn {
+            width: 100%;
+        }
+        &__card {
+            padding: 15px 10px;
+        }
+        &__time {
+            &-wrap {
+                grid-template-columns: 1fr 1fr 1fr;
+            }
+        }
+        &__name {
+            font-size: 24px;
+        }
+        &__consult {
+            &-item {
+                &-title {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}

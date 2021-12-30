@@ -1,0 +1,143 @@
+.doctor-reg {
+    padding: 35px 0;
+    &__inner {
+        display: flex;
+    }
+    &__left {
+        width: 450px;
+        flex-shrink: 0;
+        img {
+            width: 100%;
+            border-radius: 23px;
+        }
+    }
+    &__right {
+        width: 450px;
+        margin-left: 30px;
+    }
+    &__btn {
+        width: 330px;
+        height: 37px;
+        border-radius: 16px;
+        font-size: 17px;
+        line-height: 23px;
+        color: #FFFFFF;
+        margin-top: 32px;
+    }
+}
+
+.doctor-reg-order {
+    &__form {
+        margin-top: 38px;
+        max-width: 550px;
+        &-group {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 25px;
+            position: relative;
+            &-btn {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                right: 5px;
+                width: 125px;
+                height: 28px;
+                font-weight: bold;
+                font-size: 16px;
+                line-height: 22px;
+                color: #FFFFFF;
+                border-radius: 22px;
+            }
+            input {
+                width: 420px;
+                padding: 0 11px;
+            }
+            label {
+                margin-bottom: 0;
+                width: 125px;
+                flex-shrink: 0;
+            }
+        }
+        &-btn {
+            width: 328px;
+            height: 55px;
+            margin-top: 50px;
+            font-weight: bold;
+            font-size: 19.25px;
+            line-height: 26px;
+            border-radius: 22px;
+        }
+    }
+}
+
+.confirm {
+    margin-left: 0;
+    &__btn {
+        width: 285px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .doctor-reg {
+        &__left {
+            width: 400px;
+        }
+        &__right {
+            width: 400px;
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .doctor-reg {
+        &__inner {
+            flex-wrap: wrap;
+        }
+        &__left {
+            width: 300px;
+            margin-bottom: 20px;
+        }
+        &__right {
+            width: 100%;
+            margin-left: 0;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .doctor-reg-order {
+        &__form {
+            &-group {
+                display: block;
+                margin-bottom: 15px;
+                &-btn {
+                    top: unset;
+                    transform: translate(0, 0);
+                    bottom: 8px;
+                }
+                label {
+                    margin-bottom: 10px;
+                    width: 100%;
+                }
+                input {
+                    width: 100%;
+                }
+            }
+        }
+        .checkbox--confirm br {
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .doctor-reg {
+        &__left {
+            width: 100%;
+        }
+        &__btn {
+            width: 100%;
+        }
+    }
+}

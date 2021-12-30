@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мои анализы</title>
+    <link rel="stylesheet" href="css/nice-select.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style2.css">
+</head>
+
+<body>
+
+    <header class='header'>
+        <div class='custom-container'>
+            <div class='header__inner'>
+                <div class="header__left">
+                    <a href="" class="header__logo">
+                        <img src="img/logo.png" alt="">
+                    </a>
+                    <div class="header__title">Заказ специального питания</div>
+                    <div class="header__desc">
+                        здесь вы можете заказать продукты и составить индивидуальный план питания <br> по состоянию здоровья и образу жизни
+                    </div>
+                </div>
+                <div class="header__right">
+                    <nav class="header-nav">
+                        <a href="" class="header-nav__item header-nav__item--active">рецепты</a>
+                        <a href="" class="header-nav__item">профиль</a>
+                        <a href="" class="header-nav__item">мой план</a>
+                        <a href="" class="header-nav__item">корзина</a>
+                    </nav>
+                    <a href="" class="header__cart">
+                        <span class="header__cart-icon">
+                            <svg width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_315:3483)">
+                                <path d="M7.12492 17.9166C7.56214 17.9166 7.91658 17.5622 7.91658 17.125C7.91658 16.6878 7.56214 16.3333 7.12492 16.3333C6.68769 16.3333 6.33325 16.6878 6.33325 17.125C6.33325 17.5622 6.68769 17.9166 7.12492 17.9166Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M15.8334 17.9166C16.2706 17.9166 16.6251 17.5622 16.6251 17.125C16.6251 16.6878 16.2706 16.3333 15.8334 16.3333C15.3962 16.3333 15.0417 16.6878 15.0417 17.125C15.0417 17.5622 15.3962 17.9166 15.8334 17.9166Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M0.791748 1.29169H3.95841L6.08008 11.8921C6.15247 12.2566 6.35076 12.584 6.64022 12.817C6.92968 13.05 7.29188 13.1738 7.66341 13.1667H15.3584C15.7299 13.1738 16.0921 13.05 16.3816 12.817C16.6711 12.584 16.8694 12.2566 16.9417 11.8921L18.2084 5.25002H4.75008" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_315:3483">
+                                <rect width="19" height="19" fill="white" transform="translate(0 0.5)"/>
+                                </clipPath>
+                                </defs>
+                            </svg>
+                        </span>
+                        <span class="header__cart-num">3</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class='profile'>
+        <div class='custom-container'>
+            <div class='profile__inner'>
+                <div class="profile-sidebar">
+                    <a href="" class="profile-sidebar__link profile-sidebar__link--active">
+                        <span>
+                            Мое питание
+                        </span>
+                        <img src="img/user2.svg" alt="">
+                    </a>
+                    <a href="" class="profile-sidebar__link">
+                        <span>Мои назначения</span>
+                        <img src="img/pacient.svg" alt="">
+                    </a>
+                    <a href="" class="profile-sidebar__link">
+                        <span>Мои анализы</span>
+                        <img src="img/analiz.svg" alt="">
+                    </a>
+                    <a href="" class="profile-sidebar__link">
+                        <span>Запись к врачу</span>
+                        <img src="img/star.svg" alt="">
+                    </a>
+                    <a href="" class="profile-sidebar__link">
+                        <span>Моя история</span>
+                        <img src="img/post-green.svg" alt="">
+                    </a>
+                    <a href="" class="profile-sidebar__link">
+                        <span>Мое состояние</span>
+                        <img src="img/health-icon.svg" alt="">
+                    </a>
+                    <a href="" class="profile-sidebar__link">
+                        <span>Мои настройки</span>
+                        <img src="img/settings-green.svg" alt="">
+                    </a>
+                </div>
+                <div class="profile-content">
+                    <div class="doctor-reg-order">
+                        <div class="doctor-reg-order__title title2">Запись нового клиента</div>
+                        <form action="" class="doctor-reg-order__form">
+                            <div class="doctor-reg-order__form-group form-group">
+                                <label>Фамилия</label>
+                                <input type="text" placeholder="Введите фамилию">
+                            </div>
+                            <div class="doctor-reg-order__form-group form-group">
+                                <label>Имя</label>
+                                <input type="text" placeholder="Введите имя">
+                            </div>
+                            <div class="doctor-reg-order__form-group form-group">
+                                <label>Отчество</label>
+                                <input type="text" placeholder="Введите отчество">
+                            </div>
+                            <div class="checkbox checkbox--big">
+                                <input type="checkbox" name="" id="check1">
+                                <label for="check1">по паспорту без отчества</label>
+                            </div>
+                            <div class="doctor-reg-order__form-group form-group">
+                                <label>Пол</label>
+                                <select name="" id="">
+                                    <option selected hidden>Выберете пол</option>
+                                    <option value="">Мужской</option>
+                                    <option value="">Женский</option>
+                                </select>
+                            </div>
+                            <div class="doctor-reg-order__form-group form-group">
+                                <label>Выберете дату</label>
+                                <input type="date" data-placeholder="Выберете дату" required aria-required="true">
+                            </div>
+                            <div class="doctor-reg-order__form-group form-group">
+                                <label>E-mail</label>
+                                <input type="email" placeholder="Введите почту">
+                            </div>
+                            <div class="doctor-reg-order__form-group form-group">
+                                <label>Пароль</label>
+                                <input type="password" placeholder="Введите пароль">
+                            </div>
+                            <div class="doctor-reg-order__form-group form-group">
+                                <label>Номер мобильного телефона</label>
+                                <input type="text" placeholder="Введите номер">
+                                <button class="doctor-reg-order__form-group-btn btn-green-linear" type="button">подтвердить</button>
+                            </div>
+                            <div class="checkbox checkbox--confirm">
+                                <input type="checkbox" name="" id="check2">
+                                <label for="check2">
+                                    Я ознакомлен с <a href="">пользовательским соглашением</a> <br> и принимаю его условия 
+                                </label>
+                            </div>
+                            <button class="doctor-reg-order__form-btn btn-green-linear">Далее</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <script src="js/swiper.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

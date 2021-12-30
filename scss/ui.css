@@ -1,22 +1,26 @@
 /*
-Error: Undefined variable: "$green".
-        on line 87 of D:\work\freelance\HealthGateMarkup\scss\ui.scss
+Error: Undefined variable: "$red".
+        on line 83 of D:\work\freelance-old\HealthGateMarkup\scss\ui.scss
 
-82:         letter-spacing: -0.02em;
-83:         color: #5A5A75;
-84:         white-space: nowrap;
-85:         margin-right: 3px;
-86:         &:hover {
-87:             color: $green;
-88:         }
-89:     }
-90:     &__img {
-91:         margin-top: 10px;
-92:         position: relative;
+78:             &:not(:last-child) {
+79:                 border-bottom: 1px solid #C4C9D3;
+80:             }
+81:         }
+82:         &-link--red {
+83:             color: $red !important;
+84:         }
+85:     }
+86:     &__top {
+87:         display: flex;
+88:         align-items: center;
 
 Backtrace:
-D:\work\freelance\HealthGateMarkup\scss\ui.scss:87
+D:\work\freelance-old\HealthGateMarkup\scss\ui.scss:83
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/variable.rb:49:in `_perform'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/node.rb:50:in `perform'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/list_literal.rb:75:in `block in _perform'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/list_literal.rb:75:in `map'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/list_literal.rb:75:in `_perform'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/node.rb:50:in `perform'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:402:in `visit_prop'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
@@ -84,4 +88,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$green\".\A         on line 87 of D:\work\freelance\HealthGateMarkup\scss\ui.scss\A \A 82:         letter-spacing: -0.02em;\A 83:         color: #5A5A75;\A 84:         white-space: nowrap;\A 85:         margin-right: 3px;\A 86:         &:hover {\A 87:             color: $green;\A 88:         }\A 89:     }\A 90:     &__img {\A 91:         margin-top: 10px;\A 92:         position: relative;"; }
+  content: "Error: Undefined variable: \"$red\".\A         on line 83 of D:\work\freelance-old\HealthGateMarkup\scss\ui.scss\A \A 78:             &:not(:last-child) {\A 79:                 border-bottom: 1px solid #C4C9D3;\A 80:             }\A 81:         }\A 82:         &-link--red {\A 83:             color: $red !important;\A 84:         }\A 85:     }\A 86:     &__top {\A 87:         display: flex;\A 88:         align-items: center;"; }

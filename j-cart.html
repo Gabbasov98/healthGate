@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Корзина</title>
+    <link rel="stylesheet" href="css/nice-select.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header class='header'>
+        <div class='custom-container'>
+            <div class='header__inner'>
+                <div class="header__left">
+                    <a href="" class="header__logo">
+                        <img src="img/logo.png" alt="">
+                    </a>
+                    <div class="header__title">Заказ специального питания</div>
+                    <div class="header__desc">
+                        здесь вы можете заказать продукты и составить индивидуальный план питания <br> по состоянию здоровья и образу жизни
+                    </div>
+                </div>
+                <div class="header__right">
+                    <nav class="header-nav">
+                        <a href="" class="header-nav__item header-nav__item--active">рецепты</a>
+                        <a href="" class="header-nav__item">профиль</a>
+                        <a href="" class="header-nav__item">мой план</a>
+                        <a href="" class="header-nav__item">корзина</a>
+                    </nav>
+                    <a href="" class="header__cart">
+                        <span class="header__cart-icon">
+                            <svg width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_315:3483)">
+                                <path d="M7.12492 17.9166C7.56214 17.9166 7.91658 17.5622 7.91658 17.125C7.91658 16.6878 7.56214 16.3333 7.12492 16.3333C6.68769 16.3333 6.33325 16.6878 6.33325 17.125C6.33325 17.5622 6.68769 17.9166 7.12492 17.9166Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M15.8334 17.9166C16.2706 17.9166 16.6251 17.5622 16.6251 17.125C16.6251 16.6878 16.2706 16.3333 15.8334 16.3333C15.3962 16.3333 15.0417 16.6878 15.0417 17.125C15.0417 17.5622 15.3962 17.9166 15.8334 17.9166Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M0.791748 1.29169H3.95841L6.08008 11.8921C6.15247 12.2566 6.35076 12.584 6.64022 12.817C6.92968 13.05 7.29188 13.1738 7.66341 13.1667H15.3584C15.7299 13.1738 16.0921 13.05 16.3816 12.817C16.6711 12.584 16.8694 12.2566 16.9417 11.8921L18.2084 5.25002H4.75008" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_315:3483">
+                                <rect width="19" height="19" fill="white" transform="translate(0 0.5)"/>
+                                </clipPath>
+                                </defs>
+                            </svg>
+                        </span>
+                        <span class="header__cart-num">3</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="cart">
+        <div class="custom-container">
+            <p class="cart__title">Корзина</p>
+            <div class='cart-tabs'>
+                <div class="cart-tab cart-tab--active">купить продукты из рецепта</div>
+                <div class="cart-tab">купить продукты из плана питания</div>
+            </div>
+            <div class="cart-plan-tabs">
+                <div class="cart-popup">
+                    <div class="cart-popup__inner">
+                        <div class="cart-popup__item">
+                            <div class="cart-popup__item-left">
+                                <strong>09.08.2021</strong>
+                                <span>понедельник</span>
+                            </div>
+                            <div class="cart-popup__item-right">
+                                <button class="cart-popup__item-add">добавить</button>
+                                <div class="cart-popup__item-product">
+                                    <span>Кальмары, фаршированные кус-кусом</span>
+                                    <button>
+                                        <img src="img/close2.svg" alt="">
+                                    </button>
+                                </div>
+                                <div class="cart-popup__item-product">
+                                    <span>Кальмары, фаршированные кус-кусом</span>
+                                    <button>
+                                        <img src="img/close2.svg" alt="">
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cart-popup__item">
+                            <div class="cart-popup__item-left">
+                                <strong>10.08.2021</strong>
+                                <span>вторник</span>
+                            </div>
+                            <div class="cart-popup__item-right">
+                                <button class="cart-popup__item-add">добавить</button>
+                            </div>
+                        </div>
+                        <div class="cart-popup__item">
+                            <div class="cart-popup__item-left">
+                                <strong>11.08.2021</strong>
+                                <span>среда</span>
+                            </div>
+                            <div class="cart-popup__item-right">
+                                <button class="cart-popup__item-add">добавить</button>
+                                <div class="cart-popup__item-product">
+                                    <span>Кальмары, фаршированные кус-кусом</span>
+                                    <button>
+                                        <img src="img/close2.svg" alt="">
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cart-popup__item">
+                            <div class="cart-popup__item-left">
+                                <strong>12.08.2021</strong>
+                                <span>четверг</span>
+                            </div>
+                            <div class="cart-popup__item-right">
+                                <button class="cart-popup__item-add">добавить</button>
+                                <div class="cart-popup__item-product">
+                                    <span>Кальмары, фаршированные кус-кусом</span>
+                                    <button>
+                                        <img src="img/close2.svg" alt="">
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cart-popup__item">
+                            <div class="cart-popup__item-left">
+                                <strong>13.08.2021</strong>
+                                <span>пятница</span>
+                            </div>
+                            <div class="cart-popup__item-right">
+                                <button class="cart-popup__item-add">добавить</button>
+                            </div>
+                        </div>
+                        <div class="cart-popup__item">
+                            <div class="cart-popup__item-left">
+                                <strong>14.08.2021</strong>
+                                <span>суббота</span>
+                            </div>
+                            <div class="cart-popup__item-right">
+                                <button class="cart-popup__item-add">добавить</button>
+                                <div class="cart-popup__item-product">
+                                    <span>Кальмары, фаршированные кус-кусом</span>
+                                    <button>
+                                        <img src="img/close2.svg" alt="">
+                                    </button>
+                                </div>
+                                <div class="cart-popup__item-product">
+                                    <span>Кальмары, фаршированные кус-кусом</span>
+                                    <button>
+                                        <img src="img/close2.svg" alt="">
+                                    </button>
+                                </div>
+                                <div class="cart-popup__item-product">
+                                    <span>Кальмары, фаршированные кус-кусом</span>
+                                    <button>
+                                        <img src="img/close2.svg" alt="">
+                                    </button>
+                                </div>
+                                <div class="cart-popup__item-product">
+                                    <span>Кальмары, фаршированные кус-кусом</span>
+                                    <button>
+                                        <img src="img/close2.svg" alt="">
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cart-popup__item">
+                            <div class="cart-popup__item-left">
+                                <strong>15.08.2021</strong>
+                                <span>воскресенье</span>
+                            </div>
+                            <div class="cart-popup__item-right">
+                                <button class="cart-popup__item-add">добавить</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart-plan-tabs__wrap">
+                    <div class="cart-plan-tab-mine">
+                        <div>
+                            <img src="img/calendar-green.svg" alt="">
+                            <span>мой план</span>
+                        </div>
+                    </div>
+                    <div class="cart-plan-tab cart-plan-tab--active">
+                        <div class="cart-plan-tab__img">
+                            <img src="img/plan.jpg" alt="">
+                        </div>
+                        <div class="cart-plan-tab__title">Куриные шашлычки в духовке</div>
+                        <div class="cart-plan-tab__calc ccalc">
+                            <button class="ccalc-minus">
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3.96722 8.92773H13.7017" stroke="#51B1A6" stroke-width="1.66876" stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg>
+                            </button>
+                            <input type="text" value="1">
+                            <button class="ccalc-plus">
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.9162 4.06055V13.795" stroke="#51B1A6" stroke-width="1.66876" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M4.04895 8.92773H13.7834" stroke="#51B1A6" stroke-width="1.66876" stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg>
+                            </button>
+                        </div>
+                        <button class="cart-plan-tab__delete">
+                            <svg width="16" height="18" viewBox="0 0 16 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 4.11108H2.55556H15" stroke="#D4145A" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path d="M4.889 4.11111V2.55556C4.889 2.143 5.05289 1.74733 5.34461 1.45561C5.63633 1.16389 6.03199 1 6.44455 1H9.55566C9.96822 1 10.3639 1.16389 10.6556 1.45561C10.9473 1.74733 11.1112 2.143 11.1112 2.55556V4.11111M13.4446 4.11111V15C13.4446 15.4126 13.2807 15.8082 12.9889 16.0999C12.6972 16.3917 12.3016 16.5556 11.889 16.5556H4.11122C3.69866 16.5556 3.303 16.3917 3.01128 16.0999C2.71955 15.8082 2.55566 15.4126 2.55566 15V4.11111H13.4446Z" stroke="#D4145A" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path d="M6.44434 8V12.6667" stroke="#D4145A" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path d="M9.55566 8V12.6667" stroke="#D4145A" stroke-linecap="round" stroke-linejoin="round"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="cart-plan-tab">
+                        <div class="cart-plan-tab__img">
+                            <img src="img/plan.jpg" alt="">
+                        </div>
+                        <div class="cart-plan-tab__title">Куриные шашлычки в духовке</div>
+                        <div class="cart-plan-tab__calc ccalc">
+                            <button class="ccalc-minus">
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3.96722 8.92773H13.7017" stroke="#51B1A6" stroke-width="1.66876" stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg>
+                            </button>
+                            <input type="text" value="1">
+                            <button class="ccalc-plus">
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.9162 4.06055V13.795" stroke="#51B1A6" stroke-width="1.66876" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M4.04895 8.92773H13.7834" stroke="#51B1A6" stroke-width="1.66876" stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg>
+                            </button>
+                        </div>
+                        <button class="cart-plan-tab__delete">
+                            <svg width="16" height="18" viewBox="0 0 16 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 4.11108H2.55556H15" stroke="#D4145A" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path d="M4.889 4.11111V2.55556C4.889 2.143 5.05289 1.74733 5.34461 1.45561C5.63633 1.16389 6.03199 1 6.44455 1H9.55566C9.96822 1 10.3639 1.16389 10.6556 1.45561C10.9473 1.74733 11.1112 2.143 11.1112 2.55556V4.11111M13.4446 4.11111V15C13.4446 15.4126 13.2807 15.8082 12.9889 16.0999C12.6972 16.3917 12.3016 16.5556 11.889 16.5556H4.11122C3.69866 16.5556 3.303 16.3917 3.01128 16.0999C2.71955 15.8082 2.55566 15.4126 2.55566 15V4.11111H13.4446Z" stroke="#D4145A" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path d="M6.44434 8V12.6667" stroke="#D4145A" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path d="M9.55566 8V12.6667" stroke="#D4145A" stroke-linecap="round" stroke-linejoin="round"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+            <p class="cart__title">Продукты из рецепта</p>
+            <div class="cart__wrap">
+                <div class="cart__items">
+                    <div class="cart__item">
+                        <div class="cart__item-show">
+                            <div class="cart__item-left">
+                                <div class="cart__item-img">
+                                    <img src="img/ingridient1.png" alt="">
+                                </div>
+                            </div>
+                            <div class="cart__item-center">
+                                <div class="cart__item-content">
+                                    <div class="cart__item-title">Кальмары “Море море” 500 гр.</div>
+                                    <button class="cart__item-change-btn">
+                                        <span>можно заменить</span>
+                                        <i>
+                                            <svg width="6" height="4" viewBox="0 0 6 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M3.20548 3.89227L5.45548 0.642267C5.48143 0.60476 5.49663 0.560869 5.49943 0.515345C5.50222 0.469822 5.49251 0.4244 5.47135 0.383999C5.45018 0.343598 5.41837 0.309758 5.37935 0.286141C5.34033 0.262524 5.29559 0.250032 5.24998 0.250017L0.749983 0.250017C0.704352 0.249986 0.659583 0.262445 0.620528 0.286044C0.581473 0.309642 0.549622 0.343479 0.528425 0.383888C0.507229 0.424297 0.497497 0.469737 0.500284 0.515283C0.50307 0.560828 0.518269 0.604743 0.544233 0.642267L2.79423 3.89227C2.81734 3.92538 2.8481 3.95242 2.8839 3.97109C2.9197 3.98976 2.95948 3.99951 2.99986 3.99951C3.04023 3.99951 3.08001 3.98976 3.11581 3.97109C3.15161 3.95242 3.18237 3.92538 3.20548 3.89227Z" fill="#D4145A"/>
+                                            </svg>
+                                        </i>
+                                    </button>
+                                </div>
+                                <div class="cart__item-calc ccalc">
+                                    <button class="ccalc-minus">
+                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M3.96722 8.92773H13.7017" stroke="#51B1A6" stroke-width="1.66876" stroke-linecap="round" stroke-linejoin="round"></path>
+                                        </svg>
+                                    </button>
+                                    <input type="text" value="1">
+                                    <button class="ccalc-plus">
+                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M8.9162 4.06055V13.795" stroke="#51B1A6" stroke-width="1.66876" stroke-linecap="round" stroke-linejoin="round"></path>
+                                            <path d="M4.04895 8.92773H13.7834" stroke="#51B1A6" stroke-width="1.66876" stroke-linecap="round" stroke-linejoin="round"></path>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="cart__item-right">
+                                <div class="cart__item-prices">
+                                    <div class="cart__item-price">
+                                        349 <span>₽</span>
+                                    </div>
+                                    <div class="cart__item-price-sale">449</div>
+                                </div>
+                                <button class="cart__item-delete">
+                                    <svg width="16" height="18" viewBox="0 0 16 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 4.11108H2.55556H15" stroke="#D4145A" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M4.88888 4.11111V2.55556C4.88888 2.143 5.05276 1.74733 5.34449 1.45561C5.63621 1.16389 6.03187 1 6.44443 1H9.55554C9.9681 1 10.3638 1.16389 10.6555 1.45561C10.9472 1.74733 11.1111 2.143 11.1111 2.55556V4.11111M13.4444 4.11111V15C13.4444 15.4126 13.2805 15.8082 12.9888 16.0999C12.6971 16.3917 12.3014 16.5556 11.8889 16.5556H4.1111C3.69854 16.5556 3.30288 16.3917 3.01115 16.0999C2.71943 15.8082 2.55554 15.4126 2.55554 15V4.11111H13.4444Z" stroke="#D4145A" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M6.44446 8V12.6667" stroke="#D4145A" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M9.55554 8V12.6667" stroke="#D4145A" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="cart__item-hidden">
+                            <div class="cart__substitutes">
+                                <div class="cart__substitute">
+                                    <div class="cart__substitute-img">
+                                        <img src="img/ingridient5.png" alt="">
+                                    </div>
+                                    <div class="cart__substitute-title">
+                                        Масло оливковое “Экстра” 900 мл.
+                                    </div>
+                                    <div class="cart__substitute-price">349</div>
+                                    <button class="cart__substitute-btn">
+                                        <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.708313 2.83325V7.08325H4.95831" stroke="#51B1A6" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M16.2917 14.1667V9.91675H12.0417" stroke="#51B1A6" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M14.5137 6.37503C14.1545 5.35984 13.5439 4.45219 12.739 3.73679C11.9341 3.02138 10.9611 2.52153 9.91078 2.28388C8.86044 2.04623 7.76703 2.07852 6.73255 2.37775C5.69808 2.67697 4.75626 3.23337 3.99498 3.99503L0.708313 7.08337M16.2916 9.9167L13.005 13.005C12.2437 13.7667 11.3019 14.3231 10.2674 14.6223C9.23293 14.9215 8.13951 14.9538 7.08918 14.7162C6.03885 14.4785 5.06584 13.9787 4.26094 13.2633C3.45603 12.5479 2.84547 11.6402 2.48623 10.625" stroke="#51B1A6" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="cart__substitute">
+                                    <div class="cart__substitute-img">
+                                        <img src="img/ingridient5.png" alt="">
+                                    </div>
+                                    <div class="cart__substitute-title">
+                                        Масло оливковое “Экстра” 900 мл.
+                                    </div>
+                                    <div class="cart__substitute-price">349</div>
+                                    <button class="cart__substitute-btn">
+                                        <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.708313 2.83325V7.08325H4.95831" stroke="#51B1A6" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M16.2917 14.1667V9.91675H12.0417" stroke="#51B1A6" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M14.5137 6.37503C14.1545 5.35984 13.5439 4.45219 12.739 3.73679C11.9341 3.02138 10.9611 2.52153 9.91078 2.28388C8.86044 2.04623 7.76703 2.07852 6.73255 2.37775C5.69808 2.67697 4.75626 3.23337 3.99498 3.99503L0.708313 7.08337M16.2916 9.9167L13.005 13.005C12.2437 13.7667 11.3019 14.3231 10.2674 14.6223C9.23293 14.9215 8.13951 14.9538 7.08918 14.7162C6.03885 14.4785 5.06584 13.9787 4.26094 13.2633C3.45603 12.5479 2.84547 11.6402 2.48623 10.625" stroke="#51B1A6" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="cart__substitute">
+                                    <div class="cart__substitute-img">
+                                        <img src="img/ingridient5.png" alt="">
+                                    </div>
+                                    <div class="cart__substitute-title">
+                                        Масло оливковое “Экстра” 900 мл.
+                                    </div>
+                                    <div class="cart__substitute-price">349</div>
+                                    <button class="cart__substitute-btn">
+                                        <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.708313 2.83325V7.08325H4.95831" stroke="#51B1A6" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M16.2917 14.1667V9.91675H12.0417" stroke="#51B1A6" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M14.5137 6.37503C14.1545 5.35984 13.5439 4.45219 12.739 3.73679C11.9341 3.02138 10.9611 2.52153 9.91078 2.28388C8.86044 2.04623 7.76703 2.07852 6.73255 2.37775C5.69808 2.67697 4.75626 3.23337 3.99498 3.99503L0.708313 7.08337M16.2916 9.9167L13.005 13.005C12.2437 13.7667 11.3019 14.3231 10.2674 14.6223C9.23293 14.9215 8.13951 14.9538 7.08918 14.7162C6.03885 14.4785 5.06584 13.9787 4.26094 13.2633C3.45603 12.5479 2.84547 11.6402 2.48623 10.625" stroke="#51B1A6" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="cart__substitute">
+                                    <div class="cart__substitute-img">
+                                        <img src="img/ingridient5.png" alt="">
+                                    </div>
+                                    <div class="cart__substitute-title">
+                                        Масло оливковое “Экстра” 900 мл.
+                                    </div>
+                                    <div class="cart__substitute-price">349</div>
+                                    <button class="cart__substitute-btn">
+                                        <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.708313 2.83325V7.08325H4.95831" stroke="#51B1A6" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M16.2917 14.1667V9.91675H12.0417" stroke="#51B1A6" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M14.5137 6.37503C14.1545 5.35984 13.5439 4.45219 12.739 3.73679C11.9341 3.02138 10.9611 2.52153 9.91078 2.28388C8.86044 2.04623 7.76703 2.07852 6.73255 2.37775C5.69808 2.67697 4.75626 3.23337 3.99498 3.99503L0.708313 7.08337M16.2916 9.9167L13.005 13.005C12.2437 13.7667 11.3019 14.3231 10.2674 14.6223C9.23293 14.9215 8.13951 14.9538 7.08918 14.7162C6.03885 14.4785 5.06584 13.9787 4.26094 13.2633C3.45603 12.5479 2.84547 11.6402 2.48623 10.625" stroke="#51B1A6" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart__form">
+                    <form action="">
+                        <div class="cart__form-datetime">
+                            <div class="cart__form-title">Дата и время доставки</div>
+                            <div class="cart__form-datetime-wrap">
+                                <div class="cart__form-date">
+                                    <div class="cart__form-date-input">
+                                        <img src="img/calendar2.svg" alt="">
+                                    </div>
+                                    <div class="cart__form-date-text">28.10.2021</div>
+                                </div>
+                                <div class="cart__form-time">
+                                    <div class="cart__form-time-input">
+                                        <img src="img/time2.svg" alt="">
+                                    </div>
+                                    <div class="cart__form-time-text">13:00-17:00</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cart__form-address">
+                            <div class="cart__form-title">Адрес доставки</div>
+                            <div class="cart__form-address-wrap">
+                                <input type="text" placeholder="Укажите адрес доставки">
+                                <button class="cart__form-address-btn" type="button">
+                                    <img src="img/map-marker.svg" alt="">
+                                </button>
+                            </div>
+                        </div>
+                        <div class="cart__form-phone">
+                            <div class="cart__form-title">Номер телефона</div>
+                            <div class="cart__form-phone-wrap">
+                                <input type="tel" placeholder="+7 (___) ___ - __ - __">
+                            </div>
+                        </div>
+                        <div class="cart__form-name-mail">
+                            <div class="cart__form-name">
+                                <div class="cart__form-title">Имя</div>
+                                <div class="cart__form-name-wrap">
+                                    <input type="text" placeholder="Имя">
+                                </div>
+                            </div>
+                            <div class="cart__form-mail">
+                                <div class="cart__form-title">E-mail</div>
+                                <div class="cart__form-mail-wrap">
+                                    <input type="email" placeholder="Почта">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cart__form-pay">
+                            <div class="cart__form-radio">
+                                <input type='radio' class='radio' id='pay1' name='pay' />
+                                <label for='pay1'>Оплатить наличными или картой
+                                    при получении</label>
+                            </div>
+                            <div class="cart__form-radio">
+                                <input type='radio' class='radio' id='pay2' name='pay' />
+                                <label for='pay2'>Оплатить банковской картой</label>
+                            </div>
+                            <div class="cart__form-radio">
+                                <input type='radio' class='radio' id='pay3' name='pay' />
+                                <label for='pay3'>Оплатить Apple Pay</label>
+                            </div>
+                        </div>
+                        <div class="cart__form-door">
+                            <div class="cart__form-door-check">
+                                <input type='checkbox' class='checkbox' id='door' />
+                                <label for='door'>
+                                <strong>
+                                        Оставить у двери
+                                    <i>
+                                        <img src="img/hint.svg" alt="">
+                                    </i>
+                                </strong>
+                                <span>только при онлайн оплате</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="cart__form-promo">
+                            <div class="cart__form-title">Промокод</div>
+                            <div class="cart__form-promo-wrap">
+                                <input type="text" placeholder="Укажите адрес доставки">
+                                <button class="cart__form-promo-btn" type="button">
+                                    <img src="img/play.svg" alt="">
+                                </button>
+                            </div>
+                        </div>
+                        <div class="cart__form-order">
+                            <div class="cart__form-order-left">
+                                <strong>от 15 69845₽</strong>
+                                <span>34 товаров</span>
+                            </div>
+                            <button class="cart__form-order-btn">оформить заказ</button>
+                        </div>
+                        <a href="" class="cart__form-conf">политика конфедициальности</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <script src="js/swiper.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

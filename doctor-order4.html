@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Профиль</title>
+    <link rel="stylesheet" href="css/nice-select.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style2.css">
+</head>
+
+<body>
+
+    <header class='header'>
+        <div class='custom-container'>
+            <div class='header__inner'>
+                <div class="header__left">
+                    <a href="" class="header__logo">
+                        <img src="img/logo.png" alt="">
+                    </a>
+                    <div class="header__title">Заказ специального питания</div>
+                    <div class="header__desc">
+                        здесь вы можете заказать продукты и составить индивидуальный план питания <br> по состоянию здоровья и образу жизни
+                    </div>
+                </div>
+                <div class="header__right">
+                    <nav class="header-nav">
+                        <a href="" class="header-nav__item header-nav__item--active">рецепты</a>
+                        <a href="" class="header-nav__item">профиль</a>
+                        <a href="" class="header-nav__item">мой план</a>
+                        <a href="" class="header-nav__item">корзина</a>
+                    </nav>
+                    <a href="" class="header__cart">
+                        <span class="header__cart-icon">
+                            <svg width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_315:3483)">
+                                <path d="M7.12492 17.9166C7.56214 17.9166 7.91658 17.5622 7.91658 17.125C7.91658 16.6878 7.56214 16.3333 7.12492 16.3333C6.68769 16.3333 6.33325 16.6878 6.33325 17.125C6.33325 17.5622 6.68769 17.9166 7.12492 17.9166Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M15.8334 17.9166C16.2706 17.9166 16.6251 17.5622 16.6251 17.125C16.6251 16.6878 16.2706 16.3333 15.8334 16.3333C15.3962 16.3333 15.0417 16.6878 15.0417 17.125C15.0417 17.5622 15.3962 17.9166 15.8334 17.9166Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M0.791748 1.29169H3.95841L6.08008 11.8921C6.15247 12.2566 6.35076 12.584 6.64022 12.817C6.92968 13.05 7.29188 13.1738 7.66341 13.1667H15.3584C15.7299 13.1738 16.0921 13.05 16.3816 12.817C16.6711 12.584 16.8694 12.2566 16.9417 11.8921L18.2084 5.25002H4.75008" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_315:3483">
+                                <rect width="19" height="19" fill="white" transform="translate(0 0.5)"/>
+                                </clipPath>
+                                </defs>
+                            </svg>
+                        </span>
+                        <span class="header__cart-num">3</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class='profile'>
+        <div class='custom-container'>
+            <div class='profile__inner'>
+                <div class="profile-sidebar">
+                    <a href="" class="profile-sidebar__link profile-sidebar__link--active">
+                        <span>
+                            Мое питание
+                        </span>
+                        <img src="img/user2.svg" alt="">
+                    </a>
+                    <a href="" class="profile-sidebar__link">
+                        <span>Мои назначения</span>
+                        <img src="img/pacient.svg" alt="">
+                    </a>
+                    <a href="" class="profile-sidebar__link">
+                        <span>Мои анализы</span>
+                        <img src="img/analiz.svg" alt="">
+                    </a>
+                    <a href="" class="profile-sidebar__link">
+                        <span>Запись к врачу</span>
+                        <img src="img/star.svg" alt="">
+                    </a>
+                    <a href="" class="profile-sidebar__link">
+                        <span>Моя история</span>
+                        <img src="img/post-green.svg" alt="">
+                    </a>
+                    <a href="" class="profile-sidebar__link">
+                        <span>Мое состояние</span>
+                        <img src="img/health-icon.svg" alt="">
+                    </a>
+                    <a href="" class="profile-sidebar__link">
+                        <span>Мои настройки</span>
+                        <img src="img/settings-green.svg" alt="">
+                    </a>
+                </div>
+                <div class="profile-content">
+                    <div class="online-consult">
+                        <div class="online-consult__title title2">On-line консультация</div>
+                        <div class="online-consult__card">
+                            <div class="online-consult__img">
+                                <img src="img/avatar4.png" alt="">
+                            </div>
+                            <div class="online-consult__name">Лечебов Олег Иванович</div>
+                            <div class="online-consult__profession">терапевт</div>
+                            <div class="online-consult__consult">
+                                <div class="online-consult__consult-title">Выберете кабинет врача</div>
+                                <div class="online-consult__consult-item radio">
+                                    <input type='radio' checked class='radio' id='cab1' name='cab' />
+                                    <label for='cab1'>
+                                        <span class="online-consult__consult-item-title">Центральная клиника “Астромед”</span>
+                                        <span class="online-consult__consult-item-address">Москва, Третьяковская ул. 23</span>
+                                        <div class="online-consult__consult-item-day">(вторник, среда и пятница)</div>
+                                    </label>
+                                </div>
+                                <div class="online-consult__consult-item radio">
+                                    <input type='radio' class='radio' id='cab2' name='cab' />
+                                    <label for='cab2'>
+                                        <span class="online-consult__consult-item-title">Западная клиника “Астромед”</span>
+                                        <span class="online-consult__consult-item-address">Москва, Третьяковская ул. 23</span>
+                                        <div class="online-consult__consult-item-day">(понедельник и четверг)</div>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="online-consult__date">
+                                <div class="online-consult__date-hint">
+                                    Выберете дату и время для <br> консультации
+                                </div>
+                                <div class="form-group">
+                                    <input type="date" data-placeholder="Выберете дату" required="" aria-required="true">
+                                </div>
+                            </div>
+                            <div class="online-consult__time">
+                                <div class="online-consult__time-title">Выберете время</div>
+                                <div class="online-consult__time-wrap">
+                                    <div class="online-consult__time-item">
+                                        <input type='radio' class='radio' id='time1' name='time' />
+                                        <label for='time1'>11:00</label>
+                                    </div>
+                                    <div class="online-consult__time-item">
+                                        <input type='radio' class='radio' id='time2' name='time' />
+                                        <label for='time2'>12:00</label>
+                                    </div>
+                                    <div class="online-consult__time-item">
+                                        <input type='radio' class='radio' id='time3' name='time' />
+                                        <label for='time3'>13:00</label>
+                                    </div>
+                                    <div class="online-consult__time-item">
+                                        <input type='radio' class='radio' id='time4' name='time' />
+                                        <label for='time4'>14:00</label>
+                                    </div>
+                                    <div class="online-consult__time-item">
+                                        <input type='radio' class='radio' id='time5' name='time' />
+                                        <label for='time5'>15:00</label>
+                                    </div>
+                                    <div class="online-consult__time-item">
+                                        <input type='radio' class='radio' id='time6' name='time' />
+                                        <label for='time6'>16:00</label>
+                                    </div>
+                                    <div class="online-consult__time-item">
+                                        <input type='radio' class='radio' id='time7' name='time' />
+                                        <label for='time7'>17:00</label>
+                                    </div>
+                                    <div class="online-consult__time-item">
+                                        <input type='radio' class='radio' id='time8' name='time' />
+                                        <label for='time8'>18:00</label>
+                                    </div>
+                                    <div class="online-consult__time-item">
+                                        <input type='radio' class='radio' id='time9' name='time' />
+                                        <label for='time9'>19:00</label>
+                                    </div>
+                                    <div class="online-consult__time-item">
+                                        <input type='radio' class='radio' id='time10' name='time' />
+                                        <label for='time10'>20:00</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="online-consult__price">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M19.4196 0.589276C19.2345 0.402066 19.0141 0.253552 18.771 0.152384C18.528 0.0512166 18.2673 -0.000582164 18.004 4.93534e-06H12.5161C12.1561 0.000676119 11.8109 0.14328 11.5554 0.39687L0.58459 11.3654C0.210242 11.7405 0 12.2488 0 12.7787C0 13.3087 0.210242 13.817 0.58459 14.1921L5.80774 19.4152C6.18295 19.7897 6.69142 20 7.22156 20C7.75169 20 8.26017 19.7897 8.63538 19.4152L19.6018 8.45114C19.8559 8.19604 19.999 7.85094 20 7.49089V1.99996C20.0016 1.73809 19.9511 1.47851 19.8515 1.23633C19.7518 0.994143 19.605 0.774194 19.4196 0.589276ZM15.7143 5.71415C15.4318 5.71415 15.1556 5.63037 14.9206 5.4734C14.6857 5.31643 14.5026 5.09332 14.3945 4.83229C14.2864 4.57126 14.2581 4.28403 14.3132 4.00692C14.3683 3.72981 14.5044 3.47527 14.7042 3.27549C14.904 3.0757 15.1585 2.93965 15.4356 2.88453C15.7127 2.82941 16 2.8577 16.261 2.96582C16.522 3.07394 16.7451 3.25704 16.9021 3.49196C17.0591 3.72688 17.1429 4.00308 17.1429 4.28561C17.1429 4.66449 16.9923 5.02784 16.7244 5.29574C16.4565 5.56364 16.0932 5.71415 15.7143 5.71415Z" fill="#51B1A6"/>
+                                </svg>
+                                <span>1200₽</span>
+                            </div>
+                        </div>
+                        <button class="online-consult__btn btn-green-linear">продолжить</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <script src="js/swiper.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

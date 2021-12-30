@@ -24,36 +24,117 @@ $(document).ready(function() {
         }
     })
 
-})
-
-$('.pincode input').keydown(function(e) {
-    $(this).val('');
-});
-
-$('.pincode input').keyup(function(e) {
-    var $wrap = $(this).closest('.pincode');
-    var $inputs = $wrap.find('input[type="number"]');
-    var val = $(this).val();
-
-    // Ввод только цифр
-    if (val == val.replace(/[0-9]/, '')) {
+    $('.pincode input').keydown(function(e) {
         $(this).val('');
-        return false;
-    }
-
-    // Передача фокуса следующему innput
-    $inputs.eq($inputs.index(this) + 1).focus();
-
-    // Заполнение input hidden
-    var fullval = '';
-    $inputs.each(function() {
-        fullval = fullval + (parseInt($(this).val()) || '0');
     });
-    $wrap.find('input[type="hidden"]').val(fullval);
-});
 
-$(".reg4__pincode-remove").click(function() {
-    $(this).parents(".reg4__pincode").children("input").val('');
+    $('.pincode input').keyup(function(e) {
+        var $wrap = $(this).closest('.pincode');
+        var $inputs = $wrap.find('input[type="number"]');
+        var val = $(this).val();
+
+        // Ввод только цифр
+        if (val == val.replace(/[0-9]/, '')) {
+            $(this).val('');
+            return false;
+        }
+
+        // Передача фокуса следующему innput
+        $inputs.eq($inputs.index(this) + 1).focus();
+
+        // Заполнение input hidden
+        var fullval = '';
+        $inputs.each(function() {
+            fullval = fullval + (parseInt($(this).val()) || '0');
+        });
+        $wrap.find('input[type="hidden"]').val(fullval);
+    });
+
+    $(".reg4__pincode-remove").click(function() {
+        $(this).parents(".reg4__pincode").children("input").val('');
+    })
+
+
+    $("input[type=date]").val();
+
+    $(".ill__item-show").click(function() {
+        $(this).siblings(".ill__item-hidden").slideToggle()
+    })
+
+    $(".patient-pitanie__group-show").click(function() {
+        $(this).toggleClass("patient-pitanie__group-show--active")
+        $(this).siblings(".patient-pitanie__group-hidden").slideToggle()
+    })
+
+    $(".active-notes__item-profession").click(function() {
+        $(this).siblings(".active-notes__dropdown").show()
+    })
+
+    $(".active-notes__show").click(function() {
+        $(this).toggleClass("active-notes__show--active")
+        $(this).siblings(".active-notes__hidden").slideToggle()
+    })
+
+    $(".order-history__show").click(function() {
+        $(this).toggleClass("order-history__show--active")
+        $(this).siblings(".order-history__hidden").slideToggle()
+    })
+
+
+    $(document).mouseup(function(e) { // событие клика по веб-документу
+        var div = $(".active-notes__dropdown"); // тут указываем ID элемента
+        if (!div.is(e.target) // если клик был не по нашему блоку
+            &&
+            div.has(e.target).length === 0) { // и не по его дочерним элементам
+            div.hide(); // скрываем его
+        }
+    });
+
+    $(".doctor-add__nav-filter").click(function() {
+        $(".recipe-filter").show()
+    })
+
+    $(".recipe-filter__bg").click(function() {
+        $(".recipe-filter").hide()
+    })
+
+    $(".recipe-filter__close").click(function() {
+        $(".recipe-filter").hide()
+    })
+
+    $(".cart__item-change-btn").click(function() {
+        $(this).parents(".cart__item-show").siblings(".cart__item-hidden").slideToggle()
+    })
+
+    $(".naznachenie-apteka__item-more").click(function() {
+        $(this).parents(".naznachenie-apteka__item-show").toggleClass("naznachenie-apteka__item-show--active")
+        $(this).parents(".naznachenie-apteka__item-show").siblings(".naznachenie-apteka__item-hidden").slideToggle()
+    })
+
+
+    $(".result__item-btn").click(function() {
+        $(this).siblings(".result__dropdown").show()
+    })
+
+    $(document).mouseup(function(e) { // событие клика по веб-документу
+        var div = $(".result__dropdown"); // тут указываем ID элемента
+        if (!div.is(e.target) // если клик был не по нашему блоку
+            &&
+            div.has(e.target).length === 0) { // и не по его дочерним элементам
+            div.hide(); // скрываем его
+        }
+    });
+
+    $(".recipe-detail__cal-btn").click(function() {
+        $(this).toggleClass("recipe-detail__cal-btn--active")
+        $(".recipe-detail__cal-hidden").slideToggle()
+    })
+
+    $(".recipe-detail__ingridients-btn").click(function() {
+        $(this).toggleClass("recipe-detail__ingridients-btn--active")
+        $(".recipe-detail__ingridients-hidden").slideToggle()
+    })
+
 })
 
 
